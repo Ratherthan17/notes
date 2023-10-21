@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head>
+      <title>StudyBuildWebsite</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///E:\Users\Zhang\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.1\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <h1 id="用docusaurus和github搭建网站" data-source-line="1">用Docusaurus和Github搭建网站 </h1>
+<hr>
+<h3 id="我搭建时的环境" data-source-line="5">我搭建时的环境 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>win10
+Node.js v18.18.0
+npm 9.8.1
+yarn 1.22.19
+
+2023年10月7日
+</code></pre><h2 id="一-下载nodejs" data-source-line="16">一、下载Node.js </h2>
+<h3 id="-nodejs官网httpsnodejsorgzh-cndownload" data-source-line="17">· <a href="https://nodejs.org/zh-cn/download">Node.js官网</a> </h3>
+<p data-source-line="18"><img src="../../static/img/GenerateSite/Preparation/DownloadNodejs.png" alt="Alt text"></p>
+<p data-source-line="20">:::caution注意</p>
+<ul data-source-line="21">
+<li data-source-line="21">Node.js得是16.14及以上的版本，安装好后，可以在命令行输入<code>node -v</code>敲回车查看安的版本。</li>
+<li data-source-line="22">Node.js只支持Windows8.1及以上，Windows7不能用。原因是node.js的版本太高了，v12.16.2以上版本不支持win7系统，<a href="https://nodejs.org/dist/v12.16.2/">可以下载12.16.2及以下的版本</a><a href="https://blog.csdn.net/weixin_37254196/article/details/109713817">[1]</a>。<br>
+:::</li>
+</ul>
+<p data-source-line="25">安装yarn</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-global</span> <span class="token function">yarn</span>
+<span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org/ <span class="token comment"># 使用淘宝维护的npm镜像源[2]</span>
+</code></pre><h2 id="二-创建本地站点" data-source-line="31">二、创建本地站点 </h2>
+<h3 id="1-打开命令行窗口" data-source-line="32">1. 打开命令行窗口 </h3>
+<p data-source-line="33">找个地方新建一个文件夹，点进去（这些文件、文件夹的名字最好用英文名，不然可能会出问题）。<br>
+点一下地址栏，输入cmd，然后回车——在当前目录下打开命令行窗口<br>
+<img src="../../static/img/GenerateSite/Preparation/AddressBar.png" alt="Alt text"><br>
+<img src="../../static/img/GenerateSite/Preparation/Cmd.png" alt="Alt text"><br>
+<img src="../../static/img/GenerateSite/Preparation/CMD2.png" alt="Alt text"></p>
+<h3 id="2-输入命令创建站点" data-source-line="38">2. 输入命令创建站点 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>npx create-docusaurus@latest my-website classic
+</code></pre><p data-source-line="42">:::tip提示<br>
+这个"my-website"可以自由命名，"classic"是选用经典模板进行创建<br>
+:::</p>
+<p data-source-line="46">下面是创建成功的图片<br>
+<img src="../../static/img/GenerateSite/Preparation/CreatedSuccessfully.png" alt="Alt text"></p>
+<p data-source-line="49">最下面有提示，输入</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">cd</span> my-website
+<span class="token function">npm</span> start
+</code></pre><p data-source-line="54"><img src="../../static/img/GenerateSite/Preparation/OpenTheSite.png" alt="Alt text"><br>
+<img src="../../static/img/GenerateSite/Preparation/OpenTheSite2.png" alt="Alt text"></p>
+<p data-source-line="57">它会有一个绿色的条，等条走完了，会自动打开一个 <a href="http://localhost:3000">http://localhost:3000</a> 的网站，这个网站和官方文档 <a href="https://tutorial.docusaurus.io/">5-minute tutorial</a> 网站一模一样，因为创建时用的是经典模板</p>
+<p data-source-line="59"><img src="../../static/img/GenerateSite/Preparation/TheSite.png" alt="Alt text"><br>
+<img src="../../static/img/GenerateSite/Preparation/TheDocs.png" alt="Alt text"><br>
+:::caution注意<br>
+要想在浏览器里看创建的网站，<strong>就必须得让之前输入<code>npm start</code>的控制台窗口运行着</strong>，要是把它关了，网站就打不开了。<br>
+:::</p>
+<p data-source-line="65">下面是创建网站后，文件资源管理器中的文件<br>
+<img src="../../static/img/GenerateSite/Preparation/Docs.png" alt="Alt text"></p>
+<h2 id="三-将本地站点发布到github-pages" data-source-line="68">三、将本地站点发布到github pages </h2>
+<h3 id="1-在github上新建库" data-source-line="69">1. 在GitHub上新建库 </h3>
+<ul data-source-line="70">
+<li data-source-line="70">在GitHub上新建一个名为   <a href="http://xn--6qqv7i14o6xtz1z.github.io">你的账户名.github.io</a>  的仓库</li>
+<li data-source-line="71">进入仓库，点击settings，</li>
+</ul>
+<h2 id="当初遇到的错误" data-source-line="72">当初遇到的错误 </h2>
+<h4 id="最开始我用官方文档fast-track中的这个命令创建站点老出错" data-source-line="73">最开始我用官方文档"Fast Track"中的这个命令创建站点老出错 </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>npx create-docusaurus@latest my-website classic
+</code></pre><p data-source-line="77"><img src="../../static/img/GenerateSite/Preparation/FastTrack.png" alt="Alt text"></p>
+<h4 id="最后偶然发现他们5-minute-tutorial教程里的命令能用" data-source-line="79">最后偶然发现他们5-minute tutorial教程里的命令能用 </h4>
+<p data-source-line="81"><img src="../../static/img/GenerateSite/Preparation/5min.png" alt="Alt text"></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">npm</span> init docusaurus@latest my-website classic
+</code></pre><p data-source-line="86">现在这个网站就是用上面的命令创建出来的那个。之后我在写这个笔记的时候，为了截图片，又用"Fast Track"中的命令创了一次，结果成功了，真是莫名其妙！</p>
+<h3 id="这是我用fast-track中的指令创建站点时报的错" data-source-line="88">这是我用"Fast Track"中的指令创建站点时报的错 </h3>
+<pre data-role="codeBlock" data-info="" class="language-text text"><code>[INFO] Creating new Docusaurus project...
+[INFO] Installing dependencies with npm...
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR!
+npm ERR! While resolving: my-website@0.0.0
+npm ERR! Found: react@undefined
+npm ERR! node_modules/react
+npm ERR!   react@"^17.0.2" from the root project
+npm ERR!
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"&gt;=0.14.9" from prism-react-renderer@1.3.5
+npm ERR! node_modules/prism-react-renderer
+npm ERR!   prism-react-renderer@"^1.3.5" from the root project
+npm ERR!
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR!
+npm ERR!
+npm ERR! For a full report see:
+npm ERR! C:\Users\Zhang\AppData\Local\npm-cache\_logs\2023-10-06T05_22_12_008Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\Zhang\AppData\Local\npm-cache\_logs\2023-10-06T05_22_12_008Z-debug-0.log
+[ERROR] Dependency installation failed.
+[INFO] The site directory has already been created, and you can retry by typing:
+
+  `cd my-website`
+  `npm install`
+</code></pre><h2 id="参考资料" data-source-line="120">参考资料 </h2>
+<blockquote data-source-line="121">
+<ul data-source-line="121">
+<li data-source-line="121">⭐<a href="https://docusaurus.io/zh-CN/">官方文档</a></li>
+<li data-source-line="122">⭐<a href="https://zhuanlan.zhihu.com/p/567578277">实战：构建以内容为核心的开源文档网站及博客(docusaurus)-2022.9.23(超详细)</a></li>
+<li data-source-line="123"><a href="https://www.bilibili.com/video/BV1T341167xo/?spm_id_from=333.337.search-card.all.click&amp;vd_source=4f65863adf19c12522e7026402e62e53">新手5分钟纯免费搭建个人网站，github的申请与page静态页面的设置</a></li>
+<li data-source-line="124"><a href="https://www.bilibili.com/video/BV1st411r7Sj?p=10&amp;vd_source=4f65863adf19c12522e7026402e62e53">Github使用教程-黑马程序员--P10 Github Pages搭建网站</a></li>
+<li data-source-line="125"><a href="https://www.bilibili.com/video/BV1uE411x7mE/?spm_id_from=333.788&amp;vd_source=4f65863adf19c12522e7026402e62e53">【JAMSTACK】使用 Docusaurus 静态网站生成器搭建个人博客</a></li>
+<li data-source-line="126"><a href="https://www.bilibili.com/video/BV11E411M7WL/?spm_id_from=333.337.search-card.all.click&amp;vd_source=4f65863adf19c12522e7026402e62e53">【JAMSTACK】部署 Docusaurus 搭建的个人博客</a></li>
+<li data-source-line="127"><a href="https://www.bilibili.com/video/BV1Ge4y1D7Y8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=4f65863adf19c12522e7026402e62e53">Docusaurus 教程 - 在 20 分钟内构建和部署站点</a></li>
+<li data-source-line="128"><a href="https://zhuanlan.zhihu.com/p/430942362">个人网站迁移之旅：从博客到知识库，从 Hexo 到 Docusaurus</a></li>
+</ul>
+<ol data-source-line="129">
+<li data-source-line="129"><a href="https://blog.csdn.net/weixin_37254196/article/details/109713817">win7安装nodejs失败,提示支持win8.1以上</a></li>
+<li data-source-line="130"><a href="https://blog.csdn.net/weixin_44240478/article/details/124883373">docusaurus部署Github Pages搭建个人博客</a></li>
+</ol>
+</blockquote>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

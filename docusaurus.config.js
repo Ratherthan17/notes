@@ -89,41 +89,51 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '笔记',
             items: [
               {
-                label: 'Tutorial',
+                label: '前言',
                 to: '/docs/intro',
               },
             ],
           },
+          /*  {
+             title: 'Community',
+             items: [
+               {
+                 label: 'Stack Overflow',
+                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+               },
+               {
+                 label: 'Discord',
+                 href: 'https://discordapp.com/invite/docusaurus',
+               },
+               {
+                 label: 'Twitter',
+                 href: 'https://twitter.com/docusaurus',
+               },
+             ],
+           }, */
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            title: '链接',
+            items:
+              [
+                {
+                  label: '官方文档',
+                  href:'https://docusaurus.io/zh-CN/',
+                },
+              ],
           },
           {
-            title: 'More',
+            title: '更多',
             items: [
-              {
+              /* {
                 label: 'Blog',
                 to: '/blog',
-              },
+              }, */
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '我的GitHub',
+                href: 'https://github.com/Ratherthan17?tab=repositories',
               },
             ],
           },
