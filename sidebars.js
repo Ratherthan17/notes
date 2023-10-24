@@ -35,7 +35,7 @@ const sidebars = {
       items:
         [
           'MyWebsite/StudyBuildWebsite',
-          'MyWebsite/Sidebar',
+          //'MyWebsite/Sidebar',
         ],
     },
   ],
