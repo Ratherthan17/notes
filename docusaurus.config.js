@@ -44,6 +44,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //breadcrumbs: false,
+          
         },
         blog: {
           showReadingTime: true,
@@ -76,6 +78,12 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '计算机',//这里是Tutorial
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'divination',
+            position: 'right',
+            label: '术数',//这里是Tutorial
           },
           //{to: '/blog', label: 'Blog', position: 'left'},//这里是Blog
           {
@@ -119,8 +127,12 @@ const config = {
             items:
               [
                 {
-                  label: '官方文档',
-                  href:'https://docusaurus.io/zh-CN/',
+                  label: 'Docusaurus官方文档',
+                  href: 'https://docusaurus.io/zh-CN/',
+                },
+                {
+                  label: 'Markdown官方文档',
+                  href: 'https://markdown.com.cn/',
                 },
               ],
           },
@@ -144,7 +156,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+          //autoCollapseCategories: true,
+        },
+      },
     }),
-};
+
+  };
 
 module.exports = config;
