@@ -79,12 +79,12 @@ const config = {
             position: 'left',
             label: '计算机',//这里是Tutorial
           },
-          {
+          /* {
             type: 'docSidebar',
             sidebarId: 'divination',
             position: 'right',
             label: '术数',//这里是Tutorial
-          },
+          }, */
           //{to: '/blog', label: 'Blog', position: 'left'},//这里是Blog
           {
             href: 'https://github.com/ratherthan17/my-website',
