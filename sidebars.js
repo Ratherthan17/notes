@@ -78,13 +78,13 @@ const sidebars = {
     },
   ],
 
-  divination:
-    [
-      {
+  //divination:
+    //[
+      /* {
         type: 'doc',
         id: 'Divination/general',
         label: '通用基础知识',
-      },
+      }, */
 
       /* {
         type: 'category',
@@ -94,7 +94,7 @@ const sidebars = {
             
           ],
       }, */
-    ]
+    //]
 };
 
 module.exports = sidebars;
