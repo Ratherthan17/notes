@@ -47,13 +47,15 @@ const config = {
           //breadcrumbs: false,
           
         },
-        blog: {
+
+        blog:false,//禁用blog插件
+        /* blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        }, */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -93,6 +95,14 @@ const config = {
           },
         ],
       },
+
+      //设置目录标题级别
+      tableOfContents:
+      {
+        minHeadingLevel:2,
+        maxHeadingLevel:4,//设置显示h2-h4
+      },
+
       footer: {
         style: 'dark',
         links: [

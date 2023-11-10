@@ -37,6 +37,14 @@ const sidebars = {
       items:
         [
           'GitStudy/GitStudy',
+          /* {
+            type: 'category',
+            label: '遇到的错误',
+            items:
+              [
+                'GitStudy/GitError/PushError',
+              ],
+          }, */
         ]
     },
 
@@ -62,6 +70,25 @@ const sidebars = {
         ]
     },
 
+    /*----------------Win10----------------*/
+    {
+      type: 'category',
+      label: 'Win10',
+      items:
+        [
+          /*----------------重装系统-------------*/
+          {
+            type: 'category',
+            label: '重装系统',
+            items:
+              [
+                'Win10/ReinstallWin10/ReinstallWin10',
+                'Win10/ReinstallWin10/MigrateUsers',
+              ],
+
+          }
+        ]
+    },
 
 
     /*----------------网站-----------------*/
@@ -79,22 +106,22 @@ const sidebars = {
   ],
 
   //divination:
-    //[
-      /* {
-        type: 'doc',
-        id: 'Divination/general',
-        label: '通用基础知识',
-      }, */
+  //[
+  /* {
+    type: 'doc',
+    id: 'Divination/general',
+    label: '通用基础知识',
+  }, */
 
-      /* {
-        type: 'category',
-        label: '大六壬',
-        items:
-          [
-            
-          ],
-      }, */
-    //]
+  /* {
+    type: 'category',
+    label: '大六壬',
+    items:
+      [
+        
+      ],
+  }, */
+  //]
 };
 
 module.exports = sidebars;
