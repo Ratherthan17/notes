@@ -243,6 +243,53 @@ npm start
   ![Alt text](../../static/img/GenerateSite/ForBuild/99.png)
 
 
+### 6. 自定义域名
+
+- 以阿里云购买的域名为例，添加一个记录
+
+  ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D2.png)
+
+  - 主机记录的话，可以随便写。关于域名可以看下这个文章：  
+    *[🔥二级域名的创建、配置和解析，买一个域名，有无限个域名可以使用的方案。][🔥二级域名的创建、配置和解析，买一个域名，有无限个域名可以使用的方案。]*
+
+  ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D3.png)
+
+  - 在 GitHub Pages 的 Custom domain 里填入你的二级域名，点 save
+
+    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D4.png)
+
+    等一会，等网站变成你的二级域名
+
+    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D5.png)
+
+  - 在站点的 static 目录下，新建一个文本文档，命名为 CNAME ，里面不用写东西，空的就行
+
+    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png)
+
+
+- 修改 docusaurus.config.js
+
+  - url：'https://xxx.zhangyuqi.top/',  
+  - baseUrl: '/',
+
+- 然后重新部署一次
+
+  ```bash
+ cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
+ ```
+
+- 遇到的问题
+
+  - 部署后，用 xxx.zhangyuqi.top 打开，显示经典出错红框
+
+  ```
+  Your Docusaurus site did not load properly.
+
+  A very common reason is a wrong site baseUrl configuration.
+  ```
+
+  - 我看了下 GitHub Pages 的 Custom domain 变成了空的，我又重新填了一下，save，然后就行了
+
 ---
 
 ## 四、 当初遇到的错误
@@ -313,3 +360,4 @@ npm ERR! A complete log of this run can be found in: C:\Users\Zhang\AppData\Loca
 [a]: https://docs.github.com/zh/pages/getting-started-with-github-pages/about-github-pages
 [b]: https://zhuanlan.zhihu.com/p/183977963
 [c]: https://juejin.cn/post/7215478156948701240
+[🔥二级域名的创建、配置和解析，买一个域名，有无限个域名可以使用的方案。]: https://juejin.cn/post/6972877763145367583

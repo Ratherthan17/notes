@@ -54,7 +54,7 @@ const sidebars = {
       label: '软件',
       items:
         [
-          'Software/SoftwareLinks',
+          //'Software/SoftwareLinks',
 
           /*--------------------VSCode-------------------*/
           {
