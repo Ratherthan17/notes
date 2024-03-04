@@ -98,6 +98,7 @@ const sidebars = {
       items:
         [
           'MyWebsite/StudyBuildWebsite',
+          'MyWebsite/WebCloneError',
 
 
           //'MyWebsite/Sidebar',
