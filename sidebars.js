@@ -37,14 +37,14 @@ const sidebars = {
       items:
         [
           'GitStudy/GitStudy',
-          /* {
+          {
             type: 'category',
             label: '遇到的错误',
             items:
               [
                 'GitStudy/GitError/PushError',
               ],
-          }, */
+          },
         ]
     },
 

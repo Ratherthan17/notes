@@ -13,6 +13,9 @@ Vercel      ：https://www.zhangyuqi.top/
 - ### Git 学习
 
   - [一些助于学习 Git 的视频链接和博客链接](https://ratherthan17.github.io/notes/docs/GitStudy)
+  - 遇到的错误
+    - [推送代码到远程仓库失败](https://ratherthan17.github.io/notes/docs/GitStudy/GitError/PushError)
+
 
 - ### 软件
 
