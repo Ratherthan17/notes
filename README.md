@@ -16,6 +16,10 @@ Vercel      ：https://www.zhangyuqi.top/
   - 遇到的错误
     - [推送代码到远程仓库失败](https://ratherthan17.github.io/notes/docs/GitStudy/GitError/PushError)
 
+- ### 单片机学习
+  
+  - 遇到的错误
+    - [代码没写错，编译后显示 syntax error near](https://ratherthan17.github.io/notes/docs/SinglechipStudy/Error/Keil5SyntaxError%20Near)
 
 - ### 软件
 

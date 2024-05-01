@@ -12,6 +12,9 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://www.zhangyuqi.top/',
+  //当部署到 github pages 上时，用 xxx.zhangyuqi.top
+  //上传到 main 分支时用 www.zhangyuqi.top ，这是我的 vercel 用的域名
+
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',

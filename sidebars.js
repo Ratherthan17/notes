@@ -48,6 +48,25 @@ const sidebars = {
         ]
     },
 
+
+    /*----------------单片机学习-------------------*/
+    {
+      type: 'category',
+      label: '单片机学习',
+      items:
+        [
+          {
+            type: 'category',
+            label: '遇到的错误',
+            items:
+              [
+                'SinglechipStudy/Error/Keil5SyntaxError Near',
+              ]
+          }
+        ]
+    },
+
+
     /*----------------软件-----------------*/
     {
       type: 'category',
