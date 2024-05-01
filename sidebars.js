@@ -60,6 +60,7 @@ const sidebars = {
             label: '遇到的错误',
             items:
               [
+                'SinglechipStudy/Error/ProteusCrackFailure',
                 'SinglechipStudy/Error/Keil5SyntaxError Near',
               ]
           }
