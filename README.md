@@ -29,6 +29,7 @@ Vercel      ：https://www.zhangyuqi.top/
       - [在右键菜单添加 “用 VSCode 打开”](https://ratherthan17.github.io/notes/docs/Software/VSCode/OpenWithVSCode)
 
 - ### Win10
+  - [延长暂停更新天数](https://ratherthan17.github.io/notes/docs/Win10/DelayUpdate)
 
   - 重装系统
     - 用 U盘 重装 Win10 系统（待完善...）

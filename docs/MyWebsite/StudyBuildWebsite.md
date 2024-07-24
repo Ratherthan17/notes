@@ -14,6 +14,14 @@ yarn 1.22.19
 ```
 ---
 
+- 此行代码仅为方便我部署时复制
+```
+cmd /C "set "GIT_USER=Ratherthan17" && yarn deploy"
+```
+
+---
+
+
 ## 一、下载 Node.js
 
 ### · [Node.js 官网](https://nodejs.org/zh-cn/download)
@@ -205,6 +213,7 @@ npm start
  ```bash
  cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
  ```
+ 
 
  按照上面 “二、创建本地站点” 写的那样打开控制台，`Ctrl + V` 粘贴
  ![Alt text](../../static/img/GenerateSite/ForBuild/DeployTogh-pages2.png)

@@ -25,7 +25,8 @@ sidebar_position: 1
 
 ## 学习
 
-- [Obsidian 软件官网——好用的记笔记软件][Obsidian 软件官网]
+- [Obsidian 软件官网——好用的记笔记软件][Obsidian 记笔记软件官网]
+- [Koodo Reader 电子书阅读器][Koodo Reader 电子书阅读器]
 
 ---
 
@@ -51,6 +52,14 @@ sidebar_position: 1
 
 - [在线PS网站1-Photopea][在线PS网站1-Photopea]
     - [在线PS网站2][在线PS网站2]
+
+- [在线图片编辑器][在线图片编辑器]
+
+- [Chatgpt 官网][Chatgpt]
+    - 国内AI
+        - [文心一言][文心一言]
+        - [提示词之家——每天签一回到，可以用一次GPT4][提示词之家]
+        - [ChatGPT Chinese——可以免费使用 gpt-3.5-turbo][ChatGPT Chinese——可以免费使用 gpt-3.5-turbo]
 
 
 ---
@@ -114,7 +123,12 @@ sidebar_position: 1
 
 #### 紫微斗数
 
-- [《紫微斗数精成》][《紫微斗数精成》]
+- [《紫微斗数精成》在线阅读][《紫微斗数精成》]
+- [免费紫微斗数算命网站][免费紫微斗数算命网站]
+
+#### 八字
+
+- [问真八字——在线排盘工具][问真八字——在线排盘工具]
 
 ### 卜
 
@@ -141,7 +155,12 @@ sidebar_position: 1
 
 
 <!-------------学习--------------->
-[Obsidian 软件官网]: https://obsidian.md/
+[Obsidian 记笔记软件官网]: https://obsidian.md/
+[Koodo Reader 电子书阅读器]: https://koodo.960960.xyz/zh
+
+
+
+
 
 <!-------------文学-------------->
 [水流云网]: http://www.wcai.net/index.htm
@@ -161,6 +180,18 @@ sidebar_position: 1
 
 [在线PS网站1-Photopea]: https://www.photopea.com/
 [在线PS网站2]: http://ps.gzqizhen.com/
+
+[在线图片编辑器]: https://www.iloveimg.com/zh-cn
+
+[Chatgpt]:https://chatgpt.com/
+[文心一言]:https://yiyan.baidu.com/
+
+[提示词之家]:https://pc.weilaigpt.cn/
+[ChatGPT Chinese——可以免费使用 gpt-3.5-turbo]:https://gptchinese.com/
+
+
+
+
 
 <!-------------小工具-------------->
 [7-Zip]: https://7-zip.org/
@@ -209,8 +240,11 @@ sidebar_position: 1
 
 <!---------------------五术--------------->
 
+<!------命------>
 [《紫微斗数精成》]: https://www.zhuqiyang.com/book/143
+[免费紫微斗数算命网站]: https://fate.windada.com/cgi-bin/fate_gb
 
+[问真八字——在线排盘工具]: https://pcbz.iwzwh.com/#/home/index
 
-
+<!------卜------>
 [杨春义]: https://q.kebook.net/forum/partner-invite

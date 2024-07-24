@@ -96,6 +96,18 @@ const sidebars = {
       label: 'Win10',
       items:
         [
+          /*--------------延长暂停更新天数------------------*/
+          'Win10/DelayUpdate',
+          /* {
+            type:'category',
+            label:'延长暂停更新天数',
+           // 'Win10/DelayUpdate/DelayUpdate',
+            items:['Win10/DelayUpdate'],
+
+          } */
+
+
+          
           /*----------------重装系统-------------*/
           {
             type: 'category',
@@ -106,7 +118,8 @@ const sidebars = {
                 'Win10/ReinstallWin10/MigrateUsers',
               ],
 
-          }
+          },
+
         ]
     },
 
