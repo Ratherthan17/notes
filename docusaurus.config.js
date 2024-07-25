@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Zhang的知识库',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/LogoIcon/WebIcon.png',//这个是标签页的图标
 
   // Set the production url of your site here
   url: 'https://www.zhangyuqi.top',//看下一行
@@ -75,7 +75,7 @@ const config = {
         title: 'Zhang',//改这里，是Mysite
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg',//这里是导航栏的logo
         },
         items: [
           {

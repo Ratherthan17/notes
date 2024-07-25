@@ -37,6 +37,7 @@ const sidebars = {
       items:
         [
           'GitStudy/GitStudy',
+          'GitStudy/Failed443',
           {
             type: 'category',
             label: '遇到的错误',
