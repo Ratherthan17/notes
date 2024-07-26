@@ -38,13 +38,19 @@ cmd /C "set "GIT_USER=Ratherthan17" && yarn deploy"
   - 补充：修改 npm 源——引用自 [Hexo 博客搭建基础教程(一)](https://www.fomal.cc/posts/e593433d.html) 
   > npm下载各种模块，默认是从国处服务器下载，速度较慢，建议配置成淘宝镜像。打开CMD窗口，运行如下命令:
   ```
-  npm config set registry https://registry.npm.taobao.org
+    npm config set registry https://registry.npmmirror.com
   ```
   
 ```bash
 npm install -global yarn
-yarn config set registry https://registry.npm.taobao.org/ # 使用淘宝维护的npm镜像源[2]
+yarn config set registry https://registry.npmmirror.com # 使用淘宝维护的npm镜像源[2]
 ```
+
+:::note备注
+原先的淘宝npm镜像源（https://registry.npm.taobao.org）过期了，已更换为新的源（https://registry.npmmirror.com）
+
+2024年7月26日晚
+:::
 
 
 ---

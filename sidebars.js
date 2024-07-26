@@ -133,6 +133,7 @@ const sidebars = {
         [
           'MyWebsite/StudyBuildWebsite',
           'MyWebsite/WebCloneError',
+          'MyWebsite/TaoBaoNpmOutOfDate',
 
 
           //'MyWebsite/Sidebar',
