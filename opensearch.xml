@@ -4,8 +4,8 @@
   <ShortName>Zhang的知识库</ShortName>
   <Description>Search Zhang的知识库</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://xxx.zhangyuqi.top/img/LogoIcon/WebIcon.png</Image>
-  <Url type="text/html" method="get" template="https://xxx.zhangyuqi.top/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://xxx.zhangyuqi.top/opensearch.xml" />
-  <moz:SearchForm>https://xxx.zhangyuqi.top/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://Ratherthan17.github.io/MyNotes/img/LogoIcon/WebIcon.png</Image>
+  <Url type="text/html" method="get" template="https://Ratherthan17.github.io/MyNotes/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://Ratherthan17.github.io/MyNotes/opensearch.xml" />
+  <moz:SearchForm>https://Ratherthan17.github.io/MyNotes/</moz:SearchForm>
 </OpenSearchDescription>
