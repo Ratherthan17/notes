@@ -1,11 +1,11 @@
 {
-    "index_name": "ForGithubPages",
+    "index_name": "ForVercel",
     "start_urls": [
         {
-            "url":"https://xxx.zhangyuqi.top"
+            "url":"https://www.zhangyuqi.top"
         }               
     ],
-    "sitemap_urls": ["https://xxx.zhangyuqi.top/sitemap.xml"],
+    "sitemap_urls": ["https://www.zhangyuqi.top/sitemap.xml"],
 
     "sitemap_alternate_links": true,
     "selectors": {
