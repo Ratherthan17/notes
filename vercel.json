@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+        { "source": "/(.*)", "destination": "https://xxx.zhangyuqi.top/$1" }
+    ]
+}

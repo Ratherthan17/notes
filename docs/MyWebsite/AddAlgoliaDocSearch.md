@@ -3,6 +3,9 @@
 ---
 
 ## 参考资料：
+
+### 步骤
+
 - [★ 如何在 Docusaurus 中使用 Algolia 實作搜尋功能 (Docusaurus Algolia)](https://youtu.be/cykGdsbe6f0)
     - [[docusaurus] 在 Docusaurus 中使用 Algolia 實作搜尋功能——上面视频的配套笔记](https://weiyun0912.github.io/Wei-Docusaurus/docs/Docusaurus/Algolia/)
 - [★ 手动给docusaurus添加一个搜索](https://blog.csdn.net/superfjj/article/details/137941874)
@@ -10,6 +13,13 @@
 - [★ 给你的网站添加Algolia全文索引吧](https://juejin.cn/post/7242284648021639227)
 - [Docusaurus 官方文档——使用 Algolia DocSearch](https://docusaurus.io/zh-CN/docs/next/search#using-algolia-docsearch)
 - [Algolia DocSearch 官方文档](https://docsearch.algolia.com/)
+
+---
+
+### 错误
+
+- [How to Fix Vercel 404 error: Child URL Path Issues](https://dev.to/david_bilsonn/how-to-fix-vercel-404-error-child-url-path-issues-n0o)
+- [如何通过 vercel 进行域名重定向](https://new.bg7iae.com/2023/07/18/usevercelrewrites/)
 
 ---
 
@@ -137,7 +147,7 @@
  
 - 打开 docusaurus.config.js ，修改之前 algolia:{} 中的 appID 、 apiKey 和 indexName 。
    
-:::warning注意
+:::caution注意
 这里会有很多个 key ，algolia:{} 中的 apiKey ，用 Search API Key
 :::
 
@@ -163,12 +173,17 @@
     ```
     - 切回 Algolia ，用  [*4. 获取 appID、apiKey(点我跳转)*](#4.获取appIDapiKey) 中的方法，找到 appID 和 apiKey
 
-    :::warning注意
+    :::caution注意
     .env 中的 apiKey 要用 Admin API Key 
     :::
    
     ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-7-_2024-07-27_21-20-23.png)
   
+:::danger危险
+记得把 .env 文件添加到 .ignore 里，不要上传到 Github 上
+:::
+
+
 
    
 #### 2. 配置爬虫规则
@@ -301,3 +316,63 @@
 - 在本地运行的那个 localhost:3000 ，也可以搜索
 
     ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功4_2024-07-28_14-07-45.png)
+
+
+---
+
+## 错误
+
+### 1. 申请给的 Application 无用
+
+#### 1. 不能用自定义域名
+
+- 我一开始照着 Dacusaurus 官方文档中的指南 -> 搜索一节，做了 [***Algolia 申请***](https://docsearch.algolia.com/apply) ，通过后给我发了俩邮件，默认给我建了个名为 github账户名io 的应用，第二封邮件中还有这个应用的 appID、appKey 和 indexName
+
+- 我用他们的 [***Algolia Crawler***](https://crawler.algolia.com/admin/users/login) 爬取了半天，显示爬取成功，但网站就是搜不了东西
+
+    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/爬取成功_2024-07-27_14-52-05.png)
+
+- 最后我在左边导航栏的 URL Inspector 发现我的网站被忽视了，忽视原因是 ratherthan17.github.io 这个域名会重定向到我的自定义域名 xxx.zhangyuqi.top 上，
+
+    - 上面的图中 Success 是 0 ，Ignored 是 4 ，我一开始没注意到，被 Finished 迷惑了
+
+    - 而我自定义的域名不被允许
+
+    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/被忽视原因_2024-07-27_14-52-05.png)
+
+    - 于是我回到主页面想把我的域名添加上，结果不让加
+
+    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/添加域名3禁用_2024-07-27_14-37-32.png)
+
+- 最后，我只能手动跑爬虫上传到 Algolia
+
+#### 2. 没有 Admin API Key
+
+- 手动跑爬虫的配置过程中，有一步是建一个 .env 文件，里面需要 Admin API Key ，而申请给的那个应用的 app Keys 里没有这个 key ，我用 Write API Key 代替，结果最终爬取的时候老报错
+
+- 所以申请给的这个 Appliction 毫无用处，还是得重新建一个
+
+
+### 2. 爬取 Vercel 托管的网站，只会爬取主页这一个
+
+- 同一个仓库项目，部署到 github pages (gh-pages分支)的就可以爬取，而用 main 分支部署的 Vercel 就不行
+
+![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/2-vecel-1-_2024-07-28_23-48-25.png)
+
+- 别看我图中用的是自定义的域名，就算是用 Vercel 给的那一长串域名，同样是只爬主页这一个
+
+- 解决办法：在项目根目录里新建一个 vercel.json ，把下面的代码复制进去
+
+    ```js title="vercel.json"
+    {
+        "rewrites": [
+            { "source": "/(.*)", "destination": "https://xxx.zhangyuqi.top/$1" }
+        ]
+    }
+    ```
+- 把 “xxx.zhangyuqi.top” 改成你的 github pages 用的域名
+
+- 另外如果是同一个项目的话，不用为 Vercel 再次新建一个 Application ，可以还用这一个，只需新建一个 index 就行了。
+    - 部署到 github pages 和 推送到 main 分支时，只需要改一下 docusaurus.config.js 里的 URL 、index 
+    - 以及 config.json 里的 index_name、start_urls 和 sitemap_urls 就行了
+    - 不用改 appID 和 appKey

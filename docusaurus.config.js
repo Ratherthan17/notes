@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/LogoIcon/WebIcon.png',//这个是标签页的图标
 
   // Set the production url of your site here
-  url: 'https://www.zhangyuqi.top',//看下一行
+  url: 'https://xxx.zhangyuqi.top',//看下一行
   //当部署到 github pages 上时，用 https://xxx.zhangyuqi.top
   //上传到 main 分支时用 https://www.zhangyuqi.top ，这是我的 vercel 用的域名
   //不用域名是 https://Ratherthan17.github.io
@@ -77,7 +77,7 @@ const config = {
         //  公开 API 密钥：提交它没有危险
         apiKey: '05ba287471865c446bb1019bcff3fa5a',
 
-        indexName: 'ForVercel',
+        indexName: 'ForGithubPages',//ForGithubPages | ForVercel 
 
        // position: 'left',
     },
