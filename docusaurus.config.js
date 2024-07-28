@@ -12,12 +12,13 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://www.zhangyuqi.top',//看下一行
-  //当部署到 github pages 上时，用 xxx.zhangyuqi.top
-  //上传到 main 分支时用 www.zhangyuqi.top ，这是我的 vercel 用的域名
+  //当部署到 github pages 上时，用 https://xxx.zhangyuqi.top
+  //上传到 main 分支时用 https://www.zhangyuqi.top ，这是我的 vercel 用的域名
+  //不用域名是 https://Ratherthan17.github.io
 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',//这个不用动
+  baseUrl: '/',//这个不用动//github.io 是 '/notes/' ，zhangyuqi 你个傻帽别再写成 MyNotes 了，可恶
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,6 +70,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia:{
+        // Algolia 提供的应用 ID
+        appId: 'TDHAFYTVF1',
+
+        //  公开 API 密钥：提交它没有危险
+        apiKey: '05ba287471865c446bb1019bcff3fa5a',
+
+        indexName: 'ForVercel',
+
+       // position: 'left',
+    },
+
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -97,6 +110,8 @@ const config = {
             position: 'right',
           },
         ],
+
+        //hideOnScroll: true, //若为 true ，文档页面向下滚动时收起顶部导航
       },
 
       //设置目录标题级别
@@ -168,6 +183,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['powershell'],
       },
       docs: {
         sidebar: {

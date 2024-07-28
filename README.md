@@ -40,4 +40,6 @@ Vercel      ：https://www.zhangyuqi.top/
 - ### 网站
 
   - [用 Docusaurus 和 Github 搭建静态网站](https://ratherthan17.github.io/notes/docs/MyWebsite/StudyBuildWebsite)
+  - [用 Algolia DocSearch 为网站添加搜索功能](https://ratherthan17.github.io/notes/docs/MyWebsite/AddAlgoliaDocSearch)
   - [从我的 Github 上 clone 下来的网站，用 npm start 出错](https://ratherthan17.github.io/notes/docs/MyWebsite/WebCloneError)
+  - [npm报错：request to [https://registry.npm.taobao.org] failed, reason： certificate has expired](https://ratherthan17.github.io/notes/docs/MyWebsite/TaoBaoNpmOutOfDate)

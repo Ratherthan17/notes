@@ -128,10 +128,11 @@ const sidebars = {
     /*----------------网站-----------------*/
     {
       type: 'category',
-      label: '网站',
+      label: '网站建设',
       items:
         [
           'MyWebsite/StudyBuildWebsite',
+          'MyWebsite/AddAlgoliaDocSearch',
           'MyWebsite/WebCloneError',
           'MyWebsite/TaoBaoNpmOutOfDate',
 
