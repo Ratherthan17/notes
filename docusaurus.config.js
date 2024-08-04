@@ -111,7 +111,7 @@ const config = {
           },
         ],
 
-        //hideOnScroll: true, //若为 true ，文档页面向下滚动时收起顶部导航
+        hideOnScroll: true, //若为 true ，文档页面向下滚动时收起顶部导航
       },
 
       //设置目录标题级别
