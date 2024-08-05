@@ -373,9 +373,8 @@
 - 把 “xxx.zhangyuqi.top” 改成你的 github pages 用的域名
 
 - 效果
-
-    ![alt text](../../../notes/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
-
+    
+    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
 
 - 另外如果是同一个项目的话，不用为 Vercel 再次新建一个 Application ，可以还用这一个，只需新建一个 index 就行了。
     - 部署到 github pages 和 推送到 main 分支时，只需要改一下 docusaurus.config.js 里的 URL 、index 
