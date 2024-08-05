@@ -12,6 +12,7 @@ export const MyColor =
   red:'#f03c46',
   white:'white',
   black:'black',
+  qing:'#f0f5fa'
 }
 
 
@@ -22,6 +23,64 @@ export function Highlight({children, bgColor,fontColor}) {
         backgroundColor: bgColor,
         borderRadius: '4px',
         color: fontColor,
+        padding: '0.2rem',
+      }}>
+      {children}
+    </span>
+  )
+}
+
+/* -------- words --------*/
+export function W({children}) {
+  return (
+    <span
+      style={{
+        backgroundColor: '#f0f5fa',
+        borderRadius: '4px',
+        color: '#25c2a0',
+        padding: '0.2rem',
+      }}>
+      {children}
+    </span>
+  )
+}
+export function Light({children}) {
+  return (
+    <span
+      style={{
+        backgroundColor: '#f0f5fa',
+        borderRadius: '4px',
+        color: '#25c2a0',
+        padding: '0.2rem',
+      }}>
+      {children}
+    </span>
+  )
+}
+
+/*----------一级标题---------- */
+export function B1({children}) {
+  return (
+    <span
+      style={{
+        backgroundColor: '#25c2a0',
+        borderRadius: '4px',
+        color: 'black',
+        padding: '0.2rem',
+      }}>
+      {children}
+    </span>
+  )
+}
+
+/*----------二级标题---------- */
+export function B2({children}) {
+  return (
+    <span
+      style={{
+        backgroundColor: '#25c2a0',
+        borderRadius: '4px',
+        color: 'white',
         padding: '0.2rem',
       }}>
       {children}

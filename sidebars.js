@@ -131,7 +131,8 @@ const sidebars = {
       label: '网站建设',
       items:
         [
-          'MyWebsite/StudyBuildWebsite',
+          //'MyWebsite/StudyBuildWebsite',
+          'MyWebsite/BuildWebsite',
           'MyWebsite/AddAlgoliaDocSearch',
           'MyWebsite/WebCloneError',
           'MyWebsite/TaoBaoNpmOutOfDate',
