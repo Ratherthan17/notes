@@ -374,7 +374,7 @@
 
 - 效果
 
-    ![alt text](../../../notes-1/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
+    ![alt text](../../../notes/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
 
 
 - 另外如果是同一个项目的话，不用为 Vercel 再次新建一个 Application ，可以还用这一个，只需新建一个 index 就行了。

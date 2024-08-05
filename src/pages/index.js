@@ -38,7 +38,7 @@ function HomepageHeader() {
           top: '50%',
            left: '50%',
          transform: 'translate(-50%, -50%)',
-
+          width: '100%',
          }}>
             <img src={WebIcon} alt="logo" width="100" height="100" />
             <h1 className="hero__title">Zhang的学习笔记</h1>

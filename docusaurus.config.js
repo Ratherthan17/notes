@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Zhang的知识库',
+  title: 'Zhang的学习笔记',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/LogoIcon/WebIcon.png',//这个是标签页的图标
 
@@ -162,8 +162,15 @@ const config = {
                   label: 'Markdown官方文档',
                   href: 'https://markdown.com.cn/',
                 },
+                {
+                  label: 'MDX 官方文档',
+                  href: 'https://www.mdxjs.cn/',
+                },
+                
               ],
+              
           },
+          
           {
             title: '更多',
             items: [
@@ -174,6 +181,15 @@ const config = {
               {
                 label: '我的GitHub',
                 href: 'https://github.com/Ratherthan17?tab=repositories',
+              },
+             
+              {
+                label: 'React 官方文档',
+                href: 'https://zh-hans.react.dev/',
+              },
+              {
+                label: 'tailwindcss 官方文档',
+                href: 'https://tailwind.nodejs.cn/',
               },
             ],
           },
