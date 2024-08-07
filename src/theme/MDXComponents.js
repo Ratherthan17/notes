@@ -1,6 +1,6 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
-import {Highlight,PhotoZoom,MyColor,W,B1,B2} from  '@site/src/components/ForMDX/forMDX';
+import {Highlight,PhotoZoom,MyColor,PhotoBox,W,B3,BH3,B2,B2W} from  '@site/src/components/ForMDX/forMDX';
 
 
 
@@ -10,7 +10,10 @@ export default{
     Highlight,
     PhotoZoom,
     MyColor,
+    PhotoBox,
     W,
-    B1,
+    B3,
     B2,
+    B2W,
+    BH3
 };

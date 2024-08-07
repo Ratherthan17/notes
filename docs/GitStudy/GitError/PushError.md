@@ -26,7 +26,7 @@
 >
 > 错误信息：
 
-```
+```bash
 To https://github.com/Ratherthan17/my-website.git
  ! [rejected]        main -> main (fetch first)
 error: failed to push some refs to 'https://github.com/Ratherthan17/my-website.git'
@@ -63,7 +63,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   
 #### 4. 把远程库中的更新合并到本地库中
 
-- 输入 ``` git pull rebase origin branch ``` ，origin 就是第二步输入 ``` git remote -v ``` 后显示的与本地库有联系的远程库，不一定是 origin ，我这里就是 my-website ; branch 你要 push 到哪个分支就输入哪个分支，我这里是主分支 main  
+- 输入 ``` git pull --rebase origin branch ``` ，origin 就是第二步输入 ``` git remote -v ``` 后显示的与本地库有联系的远程库，不一定是 origin ，我这里就是 my-website ; branch 你要 push 到哪个分支就输入哪个分支，我这里是主分支 main  
   
   ![Alt text](../../../static/img/GitStudy/GitHub%E4%B8%8E%E6%9C%AC%E5%9C%B0%E4%B8%8D%E4%B8%80%E8%87%B4/4%E8%BE%93%E5%85%A5git-pull-rebase-origin-branch.png)
 

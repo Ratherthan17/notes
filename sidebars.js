@@ -20,7 +20,7 @@ const sidebars = {
 
   tutorialSidebar: [
     'intro',
-    //'hello',
+    'test',
     /* {
       type: 'category',
       label: 'Tutorial',
@@ -131,7 +131,7 @@ const sidebars = {
       label: '网站建设',
       items:
         [
-          //'MyWebsite/StudyBuildWebsite',
+          'MyWebsite/StudyBuildWebsite',
           'MyWebsite/BuildWebsite',
           'MyWebsite/AddAlgoliaDocSearch',
           'MyWebsite/WebCloneError',
@@ -143,23 +143,27 @@ const sidebars = {
     },
   ],
 
-  //divination:
-  //[
-  /* {
-    type: 'doc',
-    id: 'Divination/general',
-    label: '通用基础知识',
-  }, */
+  // divination:[
+  //   'Divination/general',
+  // {
+  //   type: 'category',
+  //   label: '大六壬',
+  //   items:
+  //     [
+  //       'Divination/DaLiuRen/DaLiuRen'
+  //     ],
+  // },
+  // {
+  //   type: 'category',
+  //   label: '奇门遁甲',
+  //   items:
+  //     [
+  //       'Divination/QiMenDunJia/QiMenDunJia'
+  //     ],
+  // },
+  // ]
 
-  /* {
-    type: 'category',
-    label: '大六壬',
-    items:
-      [
-        
-      ],
-  }, */
-  //]
+
 };
 
 module.exports = sidebars;

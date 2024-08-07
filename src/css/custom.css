@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1a98ff;
+  --ifm-color-primary: #4046a7;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -37,23 +37,23 @@
 /*============================文档底部上、下一页按钮样式============================*/
 [data-theme='dark'] { 
   .pagination-nav__link:hover {
-    background-color: #1dffc733; /* 修改链接悬停颜色 */
-    border-color: #2ed3af; /* 修改链接悬停颜色 */
+    background-color: #1dffc733; /* 黑夜模式下，悬停时背景颜色 */
+    border-color: #2ed3af; /* 黑夜模式下，悬停时边框颜色 */
   }
 
   .pagination-nav__link {
-    border-color: #1c5e4f; /* 修改链接颜色 */
-    border-width: 3px; /* 修改圆角 */    
+    border-color: #1c5e4f; /* 边框颜色 */
+    border-width: 3px; /* 边框厚度 */    
   }
 
 }
 
 .pagination-nav__link:hover {
-  background-color: #cde4fa94; /* 修改链接悬停颜色 */
+  background-color: #cde4fa94; /* 悬停时背景颜色 */
 }
 .pagination-nav__link {
-  border-color: #b6daf8; /* 修改链接颜色 */
-  border-width: 3px; /* 修改圆角 */ 
+  border-color: #b6daf8; /* 边框颜色 */
+  border-width: 3px; /* 边框厚度 */ 
   /* background-color: #e8f1f8; */ /* 修改链接悬停颜色 */ 
 }
 /*====================================================================================*/
@@ -71,3 +71,49 @@
   /* color: #ff351a; */ /* 修改链接悬停颜色 */
 }
 /*====================================================================================*/
+
+
+/*=====================================魔改a标签================================*/
+/* a {
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 68%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: #4d52bb;
+}
+a:hover::after {
+  top: 0%;
+} */
+/*===============================================================================*/
+/* 
+a {
+  position: relative;
+  
+  
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 68%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: #4d52bb;
+}
+ */

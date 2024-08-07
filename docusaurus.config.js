@@ -97,20 +97,42 @@ const config = {
             position: 'left',
             label: '计算机',//这里是Tutorial
           },
-          /* {
-            type: 'docSidebar',
-            sidebarId: 'divination',
-            position: 'right',
-            label: '术数',//这里是Tutorial
-          }, */
+          
+          // {
+          //   type: 'dropdown',
+          //   sidebarId: 'divination',
+          //   position: 'right',
+          //   label: '玄学',//这里是Tutorial
+          //   items: [
+          //     {
+          //       label: '术数',
+          //       type: 'doc',
+          //       docId: 'Divination/general',
+                
+          //     },
+          //    /*  {
+          //       label: '命理',
+          //       type: 'doc',
+          //       docId: '',
+          //     }, */
+          //   ],
+          // },
+
           //{to: '/blog', label: 'Blog', position: 'left'},//这里是Blog
           {
             href: 'https://github.com/ratherthan17/my-website',
             label: 'GitHub',
             position: 'right',
           },
+
+          /* {
+            type: 'search',
+            position: 'right',
+          }, */
+
         ],
 
+        
         hideOnScroll: true, //若为 true ，文档页面向下滚动时收起顶部导航
       },
 
@@ -199,7 +221,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['powershell'],
+        additionalLanguages: ['powershell','bash'],
       },
       docs: {
         sidebar: {

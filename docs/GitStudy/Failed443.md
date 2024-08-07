@@ -16,7 +16,7 @@
 
 -  按下 win + r ，输入 cmd 打开命令行窗口，输入以下命令：
   
-   ```
+   ```shell title="cmd"
     git config --global http.proxy
     git config --global https.proxy
    ```
@@ -37,7 +37,7 @@
     
   -  如果不一样，在 cmd 中输入以下命令，取消之前的代理：
   
-     ```
+     ```shell title="cmd"
     git config --global --unset http.proxy
     git config --global --unset https.proxy
      ```
@@ -52,7 +52,7 @@
 
     ![alt text](../../static/img/GitStudy/Failed443/2-1重新设置代理_20240725132104.png)
 
-```
+```shell title="cmd"
 git config --global https.proxy 
 git config --global http.proxy 
 ```

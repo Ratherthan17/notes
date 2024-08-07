@@ -2,13 +2,20 @@
 sidebar_position: 1
 ---
 
+import B2 from  '@site/src/components/ForMDX/forMDX';
+
 # 一些链接
 
 ---
 
-## [网址导航][网址导航Fomalhaut🥝]（引用自——Fomalhaut🥝）
+> 
+<span style={{fontSize: '25px' }}>
+<a href="https://www.fomal.cc/box/nav/" target="_blank">网址导航</a>（引用自——Fomalhaut🥝）
+</span>
 
-## 计算机&&程序员
+---
+
+## <B2>计算机&&程序员</B2>
 
 - [VSCode 软件官网] [VSCodeLink]
 - [Git 软件官网] [GitLink]
@@ -23,28 +30,28 @@ sidebar_position: 1
 
 ---
 
-## 学习
+## <B2>学习</B2>
 
 - [Obsidian 软件官网——好用的记笔记软件][Obsidian 记笔记软件官网]
 - [Koodo Reader 电子书阅读器][Koodo Reader 电子书阅读器]
 
 ---
 
-## 文学
+## <B2>文学</B2>
 
 - [水流云网——诗词、对联][水流云网]
 
 
 ---
 
-## 马列毛
+## <B2>马列毛</B2>
 
 - [马克思主义文库][马克思主义文库]
 - [辩证法、唯物论--讲授提纲][辩证法、唯物论--讲授提纲]
 
 ---
 
-## 办公
+## <B2>办公</B2>
 
 - [WPS Office 2016 极限精简绿色版] [WPS纯净绿色版]
 - [Acrobat DC 破解版][永久免费试用Acrobat DC]
@@ -65,9 +72,9 @@ sidebar_position: 1
 ---
 
 
-## 小工具
+## <B2>小工具</B2>
 
-#### 计算机&&程序员
+### <B3/>计算机&&程序员
 
 - [微软在线虚拟机] [微软虚拟机]
     - 备注：2小时后，重新打开，不行多试几次 (重新开启后的是新的，原先的东西会都没了，所以快到时间的时候**记得备份资料**)
@@ -81,11 +88,11 @@ sidebar_position: 1
 - [Clash for Windows] [ClashforWindows]，[Clash for Windows 汉化整合版——科学上网软件] [ClashforWindows汉化整合版]
 - [Snipaste——好用的截屏软件，截的图可以悬浮在屏幕最上面] [snipaste]
 
-#### 娱乐
+### <B3/>娱乐
 
 - [PotPlayer 中文网——好用的视频播放器] [PotPlayerLink]
 
-#### 学习
+### <B3/>学习
 
 - [Quizlet——最佳的数字化单词卡和学习工具][Quizlet]
 - [MyGraphPaper 图形方格纸产生器——可以自定义纸张模板，比如语文本、英语本、田格、信纸、五线谱等][MyGraphPaper 图形方格纸产生器]
@@ -93,7 +100,7 @@ sidebar_position: 1
 
 ---
 
-## 小技巧
+## <B2>小技巧</B2>
 
 - [避免“支付宝提现手续费”的几种方法-大招四：余利宝][避免“支付宝提现手续费”的几种方法-大招四：余利宝]
 
@@ -103,9 +110,9 @@ sidebar_position: 1
 
 
 
-## Windows系统相关
+## <B2>Windows系统相关</B2>
 
-### 重装系统
+### <B3/>重装系统
 
 - [FirPE——制作U盘启动盘的软件官网] [FirPE]
 - [MSDN——下载操作系统镜像（老版）] [MSDN（下载操作系统镜像）]，[MSDN（新版）] [MSDN（新版）]
