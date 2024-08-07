@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #1a98ff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -27,4 +27,47 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  
 }
+
+
+
+
+/*============================文档底部上、下一页按钮样式============================*/
+[data-theme='dark'] { 
+  .pagination-nav__link:hover {
+    background-color: #1dffc733; /* 修改链接悬停颜色 */
+    border-color: #2ed3af; /* 修改链接悬停颜色 */
+  }
+
+  .pagination-nav__link {
+    border-color: #1c5e4f; /* 修改链接颜色 */
+    border-width: 3px; /* 修改圆角 */    
+  }
+
+}
+
+.pagination-nav__link:hover {
+  background-color: #cde4fa94; /* 修改链接悬停颜色 */
+}
+.pagination-nav__link {
+  border-color: #b6daf8; /* 修改链接颜色 */
+  border-width: 3px; /* 修改圆角 */ 
+  /* background-color: #e8f1f8; */ /* 修改链接悬停颜色 */ 
+}
+/*====================================================================================*/
+
+
+/*============================修改所有链接 属性=====================================*/
+:link:hover {
+  
+}
+/*====================================================================================*/
+
+
+/*==========================这里可以修改 顶部导航栏 ====================================*/
+.navbar__link  {
+  /* color: #ff351a; */ /* 修改链接悬停颜色 */
+}
+/*====================================================================================*/

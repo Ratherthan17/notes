@@ -22,7 +22,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundColor: '#2e8555'}}>
       <div className="container"
       style={{
          // display: 'flex',
@@ -30,6 +30,7 @@ function HomepageHeader() {
           //alignItems: 'center',
           height: '50vh',
          // ontSize: '20px',
+         
         }}>
 
          <div 
@@ -39,6 +40,7 @@ function HomepageHeader() {
            left: '50%',
          transform: 'translate(-50%, -50%)',
           width: '100%',
+          
          }}>
             <img src={WebIcon} alt="logo" width="100" height="100" />
             <h1 className="hero__title">Zhang的学习笔记</h1>

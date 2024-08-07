@@ -92,7 +92,7 @@ export function PhotoZoom(props){
     return (<p>
             <PhotoProvider  maskOpacity={0.5} speed={() => 600} >
                 <PhotoView src={props.src} alt={props.alt} title={props.title}>
-                  {props.isCenter? <center><img src={props.src}  style={{cursor: "pointer",objectFit: 'cover'}} alt={props.alt} title={props.title}  /></center>:<img src={props.src}  style={{cursor: "pointer",objectFit: 'cover'}} alt={props.alt} title={props.title}  />}
+                  {props.isCenter? <center><img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  /></center>:<img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  />}
                 </PhotoView >
             </PhotoProvider>
             </p>)
