@@ -34,6 +34,7 @@ export function Highlight({children, bgColor,fontColor}) {
     </span>
   )
 }
+/* end */
 
 
 /**********************************************************************************
@@ -68,7 +69,7 @@ export function Light({children}) {
     </span>
   )
 }
-
+/* end */
 
 /*************************************************************************************
 * 功能：为二级标题左边加一小块背景色
@@ -96,7 +97,7 @@ export function B2({children}) {
     </span>
   )
 } */
-
+/* end */
 
 /*************************************************************************************
 * 功能：三级标题样式
@@ -139,7 +140,7 @@ export function B3W({children}) {
     </span>
   )
 }
-
+/* end */
 
 
 /**************************************************************************************
@@ -156,19 +157,48 @@ export function PhotoZoom(props){
             </p>)
 }
 
+/* end */
 
-/***
+
+
+/**************************************************************************************
  * 功能：把图片框起来
- */
+ * 参数：src：图片地址，alt：图片描述，title：图片标题，isCenter：是否居中显示,不写默认为否；
+ *       isZoom：是否给图片设置点击放大，不写默认为否；
+ **************************************************************************************/
 export function PhotoBox(props){
+  if (props.isMultiple) {
     return (
-      <div class="card-demo" style={{margin: '10px',padding: '10px',borderRadius: '10px',boxShadow: '0 0 10px rgba(0,0,0,0.1)' ,border: '2px solid #5c62d5' }}>
-          <div class="card">                          
-              <img
-                src={props.src}
-                alt={props.alt}
-                title={props.title} />        
+      <div class="card-demo" style={{margin: '10px',padding: '10px',borderRadius: '10px',boxShadow: '0 0 10px rgba(0,0,0,0.1)' , }} className={BStyles.PohtoBoxBorder}>
+          <div class="card-demo" style={{borderStyle: 'solid', borderWidth: '2px',borderColor: '#2ed3af',borderRadius: '10px'}}>
+            {props.children}
+          </div>  
+      </div>  
+    )
+  }
+  else {          
+    return (
+        <div class="card-demo" style={{margin: '10px',padding: '10px',borderRadius: '10px',boxShadow: '0 0 10px rgba(0,0,0,0.1)' , }} className={BStyles.PohtoBoxBorder}>
+            <div class="card-body">
+                <CardBox src={props.src} alt={props.alt} title={props.title} isZoom={props.isZoom} isCenter={props.isCenter}></CardBox>     
+            </div>
+      </div>     
+      )    
+  }        
+}
+
+export function CardBox(props){
+    return (
+      <div class="card" >
+            {props.isZoom?                          
+              <PhotoProvider  maskOpacity={0.5} speed={() => 600} >
+                  <PhotoView src={props.src} alt={props.alt} title={props.title}>
+                    {props.isCenter? <center><img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  /></center>:<img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  />}
+                  </PhotoView >
+              </PhotoProvider> : <img src={props.src}  style={{objectFit: 'cover'}} alt={props.alt} title={props.title}  />
+            }
            </div>
-    </div>     
     )
 }
+
+/* end */

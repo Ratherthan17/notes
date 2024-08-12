@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Zhang的学习笔记',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Zhang的学习笔记',
   favicon: 'img/LogoIcon/WebIcon.png',//这个是标签页的图标
 
   // Set the production url of your site here
@@ -39,8 +39,8 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      '@docusaurus/preset-classic',
+       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -48,8 +48,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          //breadcrumbs: false,
-          
+          //breadcrumbs: false,                    
+
         },
 
         blog:false,//禁用blog插件
@@ -221,7 +221,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['powershell','bash'],
+        additionalLanguages: ['powershell','bash','jsx','markdown','cpp'],
       },
       docs: {
         sidebar: {

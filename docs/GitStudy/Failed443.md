@@ -52,7 +52,9 @@
 
     ![alt text](../../static/img/GitStudy/Failed443/2-1重新设置代理_20240725132104.png)
 
-```shell title="cmd"
+```shell title="cmd-修改 https"
 git config --global https.proxy 
+```
+```shell title="cmd-修改 http"
 git config --global http.proxy 
 ```

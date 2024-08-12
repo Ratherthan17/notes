@@ -99,3 +99,16 @@
   background-color:  #19a558;
   border-radius: 4px;
 }
+
+.PohtoBoxBorder {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #5c62d5;
+
+}
+
+[data-theme="dark"] .PohtoBoxBorder {  
+  border-width: 2px;
+  border-style: solid;
+  border-color: #19a558;
+}

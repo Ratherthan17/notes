@@ -26,9 +26,7 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
-  
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);  
 }
 
 
@@ -36,15 +34,12 @@
 
 /*============================文档底部上、下一页按钮样式============================*/
 .pagination-nav__link:hover {
-  background-color: #cde4fa94; /* 悬停时背景颜色 */
+  background-color: #cde4fa94; /* 鼠标悬停时背景颜色 */
 }
 .pagination-nav__link {
   border-color: #b6daf8; /* 边框颜色 */
   border-width: 3px; /* 边框厚度 */ 
-  /* background-color: #e8f1f8; */ /* 修改链接悬停颜色 */ 
 }
-
-
 
 [data-theme='dark'] .pagination-nav__link {
   border-color: #1c5e4f; /* 边框颜色 */
@@ -56,6 +51,49 @@
   border-color: #2ed3af; /* 黑夜模式下，悬停时边框颜色 */
 }
 /*====================================================================================*/
+
+/* .alert--info { */
+  /* background-color: #f5f5f5; */ /* 背景颜色 */
+ /*  border: 0.1rem solid #4cb3d4; */ /* 边框颜色 */
+  /* color: #4cb3d4; */ /* 文字颜色 */
+  /* padding: 1rem; */ /* 内边距 */
+  /* margin-bottom: 1rem; */ /* 外边距 */
+/* } */
+/* .alert--warning {
+  border: 0.1rem solid #e6a700; 
+}
+.alert--success {
+  border: 0.1rem solid #009400; 
+}
+.alert--danger {
+  border: 0.1rem solid #e13238; 
+}
+.alert--secondary {
+  border: 0.1rem solid #d4d5d8;
+} */
+
+.alert {
+  border: 2px solid var(--ifm-alert-border-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*============================修改所有链接 属性=====================================*/

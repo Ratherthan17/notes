@@ -20,7 +20,7 @@
     ```
     npm config get registry
     ```
-    ![alt text](../../static/img/GenerateSite/TaobaoNpmOutOfDate/1-查看npm镜像_2024-07-26_20-31-27.png)
+    ![alt text](@site/static/img/GenerateSite/TaobaoNpmOutOfDate/1-查看npm镜像_2024-07-26_20-31-27.png)
 
 - 是的话，输入以下命令，切换新源
 
@@ -36,4 +36,4 @@
     ```
     npm cache clean --force
     ```
-   ![alt text](../../static/img/GenerateSite/TaobaoNpmOutOfDate/直接设置_2024-07-26_20-40-53.png)
+   ![alt text](@site/static/img/GenerateSite/TaobaoNpmOutOfDate/直接设置_2024-07-26_20-40-53.png)

@@ -32,7 +32,7 @@
     ```
     npm install @docsearch/react@3
     ```
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/1-安装DocSearch包_2024-07-27_00-15-03.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/1-安装DocSearch包_2024-07-27_00-15-03.png)
 
 - 如果安装成功的话，package.json 里会多一行 `"@docsearch/react": "^xxx",`
 
@@ -95,16 +95,16 @@
 
 - 添加了 algolia:{} 后，你会发现 本地构建的 localhost:3000 网站出错了
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/2-1-添加Algolia后报错了_2024-07-27_00-50-49.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/2-1-添加Algolia后报错了_2024-07-27_00-50-49.png)
 
 - 不用管它，把网页关闭，重新 npm start 一下，看！右上角多了个搜索框！
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/2-2-看出现了搜索框_2024-07-27_00-50-49.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/2-2-看出现了搜索框_2024-07-27_00-50-49.png)
 
 
 - 不过现在它就是个摆设，还不能搜出东西来，需要进行下一步配置
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/2-3-现在就是个摆设_2024-07-27_00-50-49.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/2-3-现在就是个摆设_2024-07-27_00-50-49.png)
 
 
 
@@ -117,7 +117,7 @@
 
     - 如果显示让你 Get Started ，不用管，点击右上角的 Skip for now
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/4-1-点右上角SkipForNow_2024-07-27_15-11-46.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/4-1-点右上角SkipForNow_2024-07-27_15-11-46.png)
     
 #### 2. 创建 Application
 
@@ -125,7 +125,7 @@
 
     - 最后选没有（Contact us）的
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-4-_2024-07-27_21-20-23.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/3-4-_2024-07-27_21-20-23.png)
 
     - 如果显示让你 Get Started ，不用管，点击右上角的 Skip for now
 
@@ -135,7 +135,7 @@
 
 - 点击左边导航栏中的 Search , 接着点击 Create Index ，新建一个 index
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-5-_2024-07-27_21-20-23.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/3-5-_2024-07-27_21-20-23.png)
 
 #### 4. 获取 appID、apiKey {#4.获取appIDapiKey}
 
@@ -143,7 +143,7 @@
 
 - 点击 Settings -> APIKeys ，在这里可以找到 Application ID 和 API Key 
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-6-_2024-07-27_21-20-23.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/3-6-_2024-07-27_21-20-23.png)
  
 - 打开 docusaurus.config.js ，修改之前 algolia:{} 中的 appID 、 apiKey 和 indexName 。
    
@@ -155,7 +155,7 @@
 
     - 也可以点击左边的 search ，在这里找到 index name
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-indexName_2024-07-28_12-52-48.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/3-indexName_2024-07-28_12-52-48.png)
 
 
 
@@ -177,7 +177,7 @@
     .env 中的 apiKey 要用 Admin API Key 
     :::
    
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/3-7-_2024-07-27_21-20-23.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/3-7-_2024-07-27_21-20-23.png)
   
 :::danger危险
 记得把 .env 文件添加到 .ignore 里，不要上传到 Github 上
@@ -303,19 +303,19 @@
 
 - 如果爬取成功，git bash 会显示 > DocSearch: https://网址 xx records)
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功_2024-07-28_14-07-45.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功_2024-07-28_14-07-45.png)
 
 - 回到 Algolia 中的 Search ，可以看到多了许多内容
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功2_2024-07-28_14-07-45.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功2_2024-07-28_14-07-45.png)
 
 - 打开网站，点击搜索框，可以搜索到东西了
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功3_2024-07-28_14-07-45.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功3_2024-07-28_14-07-45.png)
 
 - 在本地运行的那个 localhost:3000 ，也可以搜索
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功4_2024-07-28_14-07-45.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/New/5-爬取成功4_2024-07-28_14-07-45.png)
 
 
 ---
@@ -330,7 +330,7 @@
 
 - 我用他们的 [***Algolia Crawler***](https://crawler.algolia.com/admin/users/login) 爬取了半天，显示爬取成功，但网站就是搜不了东西
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/爬取成功_2024-07-27_14-52-05.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/爬取成功_2024-07-27_14-52-05.png)
 
 - 最后我在左边导航栏的 URL Inspector 发现我的网站被忽视了，忽视原因是 ratherthan17.github.io 这个域名会重定向到我的自定义域名 xxx.zhangyuqi.top 上，
 
@@ -338,11 +338,11 @@
 
     - 而我自定义的域名不被允许
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/被忽视原因_2024-07-27_14-52-05.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/被忽视原因_2024-07-27_14-52-05.png)
 
     - 于是我回到主页面想把我的域名添加上，结果不让加
 
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/添加域名3禁用_2024-07-27_14-37-32.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/添加域名3禁用_2024-07-27_14-37-32.png)
 
 - 最后，我只能手动跑爬虫上传到 Algolia
 
@@ -357,7 +357,7 @@
 
 - 同一个仓库项目，部署到 github pages (gh-pages分支)的就可以爬取，而用 main 分支部署的 Vercel 就不行
 
-![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/2-vecel-1-_2024-07-28_23-48-25.png)
+![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/2-vecel-1-_2024-07-28_23-48-25.png)
 
 - 别看我图中用的是自定义的域名，就算是用 Vercel 给的那一长串域名，同样是只爬主页这一个
 
@@ -374,7 +374,7 @@
 
 - 效果
     
-    ![alt text](../../static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
+    ![alt text](@site/static/img/GenerateSite/AddAlgoliaDocSearch/Erro/真-爬取成功_2024-07-29_01-10-24.png)
 
 - 另外如果是同一个项目的话，不用为 Vercel 再次新建一个 Application ，可以还用这一个，只需新建一个 index 就行了。
     - 部署到 github pages 和 推送到 main 分支时，只需要改一下 docusaurus.config.js 里的 URL 、index 

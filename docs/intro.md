@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import B2 from  '@site/src/components/ForMDX/forMDX';
-
 # 一些链接
 
 ---
