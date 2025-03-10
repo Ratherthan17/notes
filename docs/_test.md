@@ -1,3 +1,9 @@
+---
+date: 2024年08月13日 星期二 01:05:15
+word_count: 299
+reading_time: 2
+---
+
 # 图片框测试 —— 未完成
 
 ---
@@ -22,16 +28,22 @@ import BStyles from '@site/src/css/MyCss.module.css';
 </div> -->
 
 <PhotoBox isMultiple={true}>
-<CardBox src={Nodejs} isZoom={true}></CardBox>
+<CardImg src={Nodejs} isZoom={true}></CardImg>
 
-<CardBox src={Nodejs} isZoom={false}></CardBox>
+<CardImg src={Nodejs} isZoom={false}></CardImg>
 </PhotoBox>
 
-<CardBox src={Nodejs} isZoom={false}>
+<CardImg src={Nodejs} >
 
-</CardBox>
+</CardImg>
 
 
+
+
+<Lazyimg 
+    className="lazy"
+    src={'http://zhansingsong.github.io/lazyimg/22.4582fc71.jpg'}
+  />
 
 ------------------------------------------------------------------------------------------------------
 

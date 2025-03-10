@@ -1,6 +1,12 @@
+---
+date: 2023年10月21日 星期六 19:31:30
+word_count: 942
+reading_time: 5
+---
+
 # 用 Docusaurus 和 Github 搭建静态网站
 
-import { B2, B3 } from  '@site/src/components/ForMDX/forMDX';
+
 
 ---
 
@@ -19,10 +25,14 @@ yarn 1.22.19
 **<B3>此行代码仅为方便我部署时复制</B3><p/>**
 
 ```bash
-cmd /C "set "GIT_USER=Ratherthan17" && yarn deploy"
+set "GIT_USER=Ratherthan17" && yarn deploy
 ```
 
 ---
+
+:::tip 备注
+若本文有的图片不能点击放大，不是出问题了，而是因为我没给它们设置。
+:::
 
 <h1 class="text--center">
 <BH3>正文</BH3>
@@ -30,9 +40,13 @@ cmd /C "set "GIT_USER=Ratherthan17" && yarn deploy"
 
 ## <B2>一、下载 Node.js</B2>
 
-- [***Node.js 官网***](https://nodejs.org/zh-cn/download)
+- [***Node.js 官网***](https://nodejs.org/zh-cn)
 
-![Node.js官网](../../static/img/GenerateSite/Preparation/DownloadNodejs.png)
+import Nodejs from '@site/static/img/GenerateSite/Preparation/DownloadNodejs.png';
+
+<CardImg src={Nodejs}>
+
+</CardImg>
 
 :::caution注意
 -  Node.js  得是 <W>18.0</W> 及以上的版本，安装好后，可以在命令行输入 ` node -v ` 敲回车查看安装的版本。
@@ -44,7 +58,7 @@ cmd /C "set "GIT_USER=Ratherthan17" && yarn deploy"
   - 补充：修改 <W>npm</W> 源——引用自 [Hexo 博客搭建基础教程(一)](https://www.fomal.cc/posts/e593433d.html) 
   > npm下载各种模块，默认是从国处服务器下载，速度较慢，<W>建议配置成淘宝镜像</W>。打开CMD窗口，运行如下命令:
   ```
-    npm config set registry https://registry.npmmirror.com
+  npm config set registry https://registry.npmmirror.com
   ```
   
 ```bash
@@ -67,9 +81,13 @@ yarn config set registry https://registry.npmmirror.com # 使用淘宝维护的n
 - 找个地方新建一个文件夹，点进去（这些文件、文件夹的名字最好用英文名，不然可能会出问题）。  
 点一下地址栏，输入 cmd，然后回车——在当前目录下打开命令行窗口  
 
-![Alt text](../../static/img/GenerateSite/Preparation/AddressBar.png)
-![Alt text](../../static/img/GenerateSite/Preparation/Cmd.png)
-![Alt text](../../static/img/GenerateSite/Preparation/CMD2.png)
+import AddressBar from '@site/static/img/GenerateSite/Preparation/AddressBar.png';
+import Cmd from '@site/static/img/GenerateSite/Preparation/CMD.png';
+import CMD2 from '@site/static/img/GenerateSite/Preparation/CMD2.png';
+
+<CardImg src={AddressBar} />
+<CardImg src={Cmd} />
+<CardImg src={CMD2} />
 
 ### <BH3>2.</BH3> 输入命令创建站点
 
@@ -81,8 +99,10 @@ npx create-docusaurus@latest my-website classic
 :::
 
 - 下面是创建成功的图片
-  
-![Alt text](../../static/img/GenerateSite/Preparation/CreatedSuccessfully.png)
+
+import CreatedSuccessfully from '@site/static/img/GenerateSite/Preparation/CreatedSuccessfully.png';
+
+<CardImg src={CreatedSuccessfully} />
 
 - 最下面有提示，输入
 
@@ -90,21 +110,30 @@ npx create-docusaurus@latest my-website classic
 cd my-website
 npm start
 ```
-![Alt text](../../static/img/GenerateSite/Preparation/OpenTheSite.png)
-![Alt text](../../static/img/GenerateSite/Preparation/OpenTheSite2.png)
+
+import OpenTheSite from '@site/static/img/GenerateSite/Preparation/OpenTheSite.png';
+import OpenTheSite2 from '@site/static/img/GenerateSite/Preparation/OpenTheSite2.png';
+
+<CardImg src={OpenTheSite} />
+<CardImg src={OpenTheSite2} />
 
 - 它会有一个绿色的条，等条走完了，会自动打开一个地址为 <W>http://localhost:3000</W> 的网站，这个网站和官方文档 [***5-minute tutorial***  ](https://tutorial.docusaurus.io/) 网站一模一样，因为创建时用的是经典模板
 
-![Alt text](../../static/img/GenerateSite/Preparation/TheSite.png)
-![Alt text](../../static/img/GenerateSite/Preparation/TheDocs.png)
+import TheSite from '@site/static/img/GenerateSite/Preparation/TheSite.png';
+import TheDocs from '@site/static/img/GenerateSite/Preparation/TheDocs.png';
+
+<CardImg src={TheSite} />
+<CardImg src={TheDocs} />
+
 :::caution注意
 要想在浏览器里看创建的网站 （http://localhost:3000 这个），**就必须得让之前输入 ` npm start ` 的控制台窗口运行着**，要是把它关了，网站就打不开了。
 :::
 
 - 下面是创建网站后，文件资源管理器中的文件  
-  
-![Alt text](../../static/img/GenerateSite/Preparation/Docs.png)
 
+import Docs from '@site/static/img/GenerateSite/Preparation/Docs.png';
+
+<CardImg src={Docs} />
 
 ---
 
@@ -114,29 +143,44 @@ npm start
 
 - 在 GitHub 上新建一个名为   **<W>你的账户名.github.io</W>**  的仓库
 
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/UserGithubIo.png)
+import UserGithubIo from '@site/static/img/GenerateSite/Preparation/GithubIO/UserGithubIo.png';
+
+<CardImg src={UserGithubIo} />
 
 - 进入仓库，点击 <W>settings</W> -> <W>pages</W> -> <W>Branch</W> 下边的选项选成 <W>main</W>，右边是<W>/(root)</W> -> <W>save</W>
   
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/IOPages.png)
+import IOPages from '@site/static/img/GenerateSite/Preparation/GithubIO/IOPages.png';
+
+<CardImg src={IOPages} />
 
 - 等一会，若上面出现："Your site is live at https://你的用户名.github.io/"，就说明网站创建好了。  
   可以点一下右边的 `Visit site` 或者在浏览器的地址栏里输入 `你的用户名.github.io` 回车，就可以看到创建的网站
 
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/SiteCreated.png)
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/TheIOSite.png)
+import SiteCreated from '@site/static/img/GenerateSite/Preparation/GithubIO/SiteCreated.png';
+import TheIOSite from '@site/static/img/GenerateSite/Preparation/GithubIO/TheIOSite.png';
+
+<CardImg src={SiteCreated} />
+<CardImg src={TheIOSite} />
 
 - 这里只有一个 Readme 文件的时候，打开网址会显示 Readme 里的内容，就是上面那张显示"个人主页"的图片
 
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/IO.png)
+import IO from '@site/static/img/GenerateSite/Preparation/GithubIO/IO.png';
+
+<CardImg src={IO} />
+
 - 而若我创建了 `index.html` 文件，则会显示 index 里面的内容
 
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/index.png)
+import index from '@site/static/img/GenerateSite/Preparation/GithubIO/index.png';
+
+<CardImg src={index} />
 
 - 还可以创建更多的 `.html` 文件，然后在 io 后面加上 "/文件名"，就可以访问到别的网页了
 
-![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/IO2.png)
-  ![Alt text](../../static/img/GenerateSite/Preparation/GithubIO/TheSecondPage.png)
+import IO2 from '@site/static/img/GenerateSite/Preparation/GithubIO/IO2.png';
+import TheSecondPage from '@site/static/img/GenerateSite/Preparation/GithubIO/TheSecondPage.png';
+
+<CardImg src={IO2} />
+<CardImg src={TheSecondPage} />
 
 - 实际上如果你不嫌麻烦的话，已经可以通过写 html 文件来保存笔记了，想看的时候就在浏览器里输入 "你的用户名.github.io/" 加记笔记的那个文件名，而上面的 Nodejs 啊、创建 Docusaurus 本地站点也就不用弄了。  
  但是，我觉得用 Docusaurus 这样更方便的工具做的话不仅省事，而且用他们的模板做出来的还好看。  
@@ -144,8 +188,11 @@ npm start
 
 ### <BH3>2.</BH3> 新建一个专门用来存放笔记的库
 - 我新建了一个 MyNotes 库，用来演示
-  
-![Alt text](../../static/img/GenerateSite/ForBuild/MyNotes.png)
+
+import MyNotes from '@site/static/img/GenerateSite/ForBuild/MyNotes.png';
+
+<CardImg src={MyNotes} />
+
 :::note备注
  这一步，你也可以不用跟着做，而是直接把构建出来的，你的 "my-website" 上传到  你的账户名.github.io  库里。  
   我只是觉得这样会比较乱？我也不知道，反正我想还是分门别类一下的好，记笔记的网站放在一个 notes 库里，将来要是又有了其他网站，A 网站的，就放到 A 库里；B 网站的，就放到 B 库里......这样是不是更清晰一些？  
@@ -154,17 +201,24 @@ npm start
 
 - [***官方文档*** ](https://docusaurus.io/zh-CN/docs/deployment#deploying-to-github-pages) 里说要用到两个分支（  <W>Main</W> 和 <W>gh-pages</W> ），<W>Main</W> 用来存放源文件，<W>gh-pages</W> 用来存放部署后的文件
 
+import Office1 from '@site/static/img/GenerateSite/ForBuild/Office1.png';
+import TwoBranches from '@site/static/img/GenerateSite/ForBuild/TwoBranches.png';
 
-![Alt text](../../static/img/GenerateSite/ForBuild/Office1.png)
-![Alt text](../../static/img/GenerateSite/ForBuild/TwoBranches.png)
+<CardImg src={Office1} />
+<CardImg src={TwoBranches} />
 
 - 所以再新建一个 <W>gh-pages</W> 分支
-  
-![Alt text](../../static/img/GenerateSite/ForBuild/gh-pages.png)
+
+import ghpages from '@site/static/img/GenerateSite/ForBuild/gh-pages.png';
+
+<CardImg src={ghpages} />
 
 - 然后和配置  <W>你的用户名.github.io</W>  网页时的操作一样，不过 <W>Branch</W> 选择 <W>gh-pages</W>
 
-![Alt text](../../static/img/GenerateSite/ForBuild/MyNotesSite0.png)
+import MyNotesSite0 from '@site/static/img/GenerateSite/ForBuild/MyNotesSite0.png';
+
+<CardImg src={MyNotesSite0} />
+
 
 
 
@@ -173,14 +227,19 @@ npm start
 
 - 打开之前创建的 "my-website" 里的 <W>docusaurus.config.js</W> 文件
 
-![Alt text](../../static/img/GenerateSite/ForBuild/OpenTheConfigFile.png)
+import OpenTheConfigFile from '@site/static/img/GenerateSite/ForBuild/OpenTheConfigFile.png';
+
+<CardImg src={OpenTheConfigFile} />
 
 - 按照[***官方文档 docusaurus.config.js settings***](https://docusaurus.io/zh-CN/docs/deployment#deploying-to-github-pages) 这里和下面的示例所说，总共要<W>修改四处、添加两句</W>
 
+import Official2 from '@site/static/img/GenerateSite/ForBuild/Official2.png';
+import official3 from '@site/static/img/GenerateSite/ForBuild/official3.png';
+import WhereToModify from '@site/static/img/GenerateSite/ForBuild/WhereToModify.png';
 
-![Alt text](../../static/img/GenerateSite/ForBuild/Official2.png)
-![Alt text](../../static/img/GenerateSite/ForBuild/official3.png)
-![Alt text](../../static/img/GenerateSite/ForBuild/WhereToModify.png)
+<CardImg src={Official2} />
+<CardImg src={official3} />
+<CardImg src={WhereToModify} />
 
 #### <B3/>步骤：
 
@@ -192,24 +251,32 @@ npm start
 6. 添加一行 <W>`trailingSlash: false,` </W> 
 
 - 以我的为例，修改完后是这样的，其中打<Highlight fontColor={'#f03c46'}>**√**</Highlight>的是修改参数的，画⭕的是添加的
-  
-![Alt text](../../static/img/GenerateSite/ForBuild/ModifyTheConfigjs.png)
+
+import ModifyTheConfigjs from '@site/static/img/GenerateSite/ForBuild/ModifyTheConfigjs.png';
+
+<CardImg src={ModifyTheConfigjs} />
 
 - 可以在官方文档的 <W>API</W> -> <W>docusaurus.config.js</W> 一节里看到
 `https://Ratherthan17.github.io` 就是 docusaurus 配置文件中的 url  
 `/MyNotes/`  就是 baseUrl
 
-![Alt text](../../static/img/GenerateSite/ForBuild/TheURLAndBaseURL.png)  
+import TheURLAndBaseURL from '@site/static/img/GenerateSite/ForBuild/TheURLAndBaseURL.png';
+
+<CardImg src={TheURLAndBaseURL} />
 
 - 其他几个要修改或添加的也能在这一节里找到解释
 
 - 官方建议我们在 <W>static</W> 文件夹下建一个扩展名为 <W>.nojekyll</W> 的空文件
 
-![Alt text](../../static/img/GenerateSite/ForBuild/CreateNojekyell1.png)
+import CreateNojekyell1 from '@site/static/img/GenerateSite/ForBuild/CreateNojekyell1.png';
+
+<CardImg src={CreateNojekyell1} />
 
 - 打开你创建的 my-website 文件夹，再打开 static
 
-![Alt text](../../static/img/GenerateSite/ForBuild/CreateNojekyell2.png)
+import CreateNojekyell2 from '@site/static/img/GenerateSite/ForBuild/CreateNojekyell2.png';
+
+<CardImg src={CreateNojekyell2} />
 
 - 这里有个奇怪的地方，这个站点是我为了写这个笔记新建出来的，打开 static 后却发现已经有一个 ` .nojekyll ` 空文件了，但我记得当初我第一次创建成功站点的时候是没有的，是我自己新建的。
 
@@ -226,10 +293,14 @@ npm start
   可恶，那时候我干了啥我忘了。  
   总之，要是你的 static 下有这个文件就不用管了，要是没有就新建一个文本文档，然后把名字删了、再把扩展名改成`.nojekell`
 
+- 更新，也许当初我记错了，后面我新建出来的站点都有 ` .nojekyll ` 这个文件
+  - 2025-3-6-23：45
 
 ### <BH3>4.</BH3> 把网站部署到 <W>GitHub Pages</W> 上
- 
- ![Alt text](../../static/img/GenerateSite/ForBuild/DeployTogh-pages.png)
+
+import DeployToghpages from '@site/static/img/GenerateSite/ForBuild/DeployTogh-pages.png';
+
+<CardImg src={DeployToghpages} />
 
 - 直接复制
   
@@ -240,22 +311,37 @@ npm start
 
  - 按照上面 “二、创建本地站点” 写的那样打开控制台，`Ctrl + V` 粘贴
  
- ![Alt text](../../static/img/GenerateSite/ForBuild/DeployTogh-pages2.png)
+import DeployToghpages2 from '@site/static/img/GenerateSite/ForBuild/DeployTogh-pages2.png';
+
+<CardImg src={DeployToghpages2} />
+
+
  
  把 "<GITHUB_USERNAME>" 改成你 GitHub 的用户名，然后回车
+
+import DeployToghpages3 from '@site/static/img/GenerateSite/ForBuild/DeployTogh-pages3.png';
+
+<CardImg src={DeployToghpages3} />
  
- ![Alt text](../../static/img/GenerateSite/ForBuild/DeployTogh-pages3.png)
+
  
- 接着会开始部署
+  接着会开始部署
+
+import StartDeploy from '@site/static/img/GenerateSite/ForBuild/StartDeploy.png';
+
+  <CardImg src={StartDeploy} />
+
+
  
- ![Alt text](../../static/img/GenerateSite/ForBuild/StartDeploy.png)
+  部署成功后，就可以打开浏览器，输入 “你的用户名.github.io/你部署的仓库名”，来查看你的网站了
  
- 部署成功后，就可以打开浏览器，输入 “你的用户名.github.io/你部署的仓库名”，来查看你的网站了
- 
- ![Alt text](../../static/img/GenerateSite/ForBuild/Done.png)
- ![Alt text](../../static/img/GenerateSite/ForBuild/OpenTheDoneSite1.png)
- ![Alt text](../../static/img/GenerateSite/ForBuild/OpenTheDoneSite2.png)
- 
+import Done from '@site/static/img/GenerateSite/ForBuild/Done.png';
+import OpenTheDoneSite1 from '@site/static/img/GenerateSite/ForBuild/OpenTheDoneSite1.png';
+import OpenTheDoneSite2 from '@site/static/img/GenerateSite/ForBuild/OpenTheDoneSite2.png';
+
+  <CardImg src={Done} />
+  <CardImg src={OpenTheDoneSite1} />
+  <CardImg src={OpenTheDoneSite2} />
 
 :::tip 提示
  注意：虽然我的用户名和仓库名首字母都是大写的，但是域名中用户名却是小写的。  
@@ -263,13 +349,34 @@ npm start
 另外**仓库名必须和你 GitHub 上的仓库名一致**，这里我把 “MyNotes” 写成小写的 "mynotes"，打开的是 404
 :::
 
- ![Alt text](../../static/img/GenerateSite/ForBuild/OpenTheDoneSite3.png)
+import OpenTheDoneSite3 from '@site/static/img/GenerateSite/ForBuild/OpenTheDoneSite3.png';
+
+<CardImg src={OpenTheDoneSite3} />
+
+
  
  可以看一下 <W>settings</W> -> <W>pages</W>，用户名就是小写的，不过我试了试，大写也没事儿
- 
- ![Alt text](../../static/img/GenerateSite/ForBuild/SettingsPages.png)
+
+import SettingsPages from '@site/static/img/GenerateSite/ForBuild/SettingsPages.png';
+
+<CardImg src={SettingsPages} />
+
+
 
 ### <BH3>5.</BH3> 其他一些事情
+
+1. 在部署到 vercel 或 github pages 等托管平台之前，**可以先进行本地测试，看看实际效果。**
+
+    -  1、在项目根目录下运行 <W>npm run build</W> ，构建网站的静态文件
+
+    ```bash
+    npm run build
+    ```
+    - 2、接着运行 <W>npm run serve</W> ，浏览器会自动打开 localhost:3000 ，可以看到网站实际部署后的效果。如果没错，就可以部署到托管平台了，要是不对，还可以再改，总比上传到 github 了才发现有问题的好。
+
+    ```bash
+    npm run serve
+    ```
 
 1. 我当初试了试，看看能不能不创建 用户名.github.io 库，而是直接用一个别的库点击 GitHub Pages 创建站点，结果不行。  
 可以看一下 [GitHub 文档][a] 、[如何拥有多个GitHub Pages][b] 和 [利用Github实现(多个)个人网站][c] 这三篇文章。  
@@ -277,53 +384,84 @@ npm start
 
 1. 运行部署命令后，会在 my-website 下创建一个 bulid 文件夹，里面存放着构建出来的 html 文件
 
-![Alt text](../../static/img/GenerateSite/ForBuild/end1.png)
-  ![Alt text](../../static/img/GenerateSite/ForBuild/end2.png)
+import end1 from '@site/static/img/GenerateSite/ForBuild/end1.png';
+import end2 from '@site/static/img/GenerateSite/ForBuild/end2.png';
+
+<CardImg src={end1} />
+<CardImg src={end2} />
+
 
   部署到 gh-pages 分支的就是这些文件
 
-  ![Alt text](../../static/img/GenerateSite/ForBuild/Branch1.png)
+import Branch1 from '@site/static/img/GenerateSite/ForBuild/Branch1.png';
+
+<CardImg src={Branch1} />
+
+
 
   这些 html 文件在文件夹里直接打开是这样的，有问题
 
-  ![Alt text](../../static/img/GenerateSite/ForBuild/end3.png)
+import end3 from '@site/static/img/GenerateSite/ForBuild/end3.png';
+
+<CardImg src={end3} />
+
+
 
   但是用 用户名.github.io/仓库名/文件名 打开就没问题
 
-  ![Alt text](../../static/img/GenerateSite/ForBuild/end4.png)
+import end4 from '@site/static/img/GenerateSite/ForBuild/end4.png';
 
-3. main 分支里这时还是空的，可以把网站源代码上传上来，方面管理
-  
-  ![Alt text](../../static/img/GenerateSite/ForBuild/Branch2.png)
+<CardImg src={end4} /> 
+ 
 
-4. 控制台有一个黄条一直显示 99%，不知道是干啥的，我最后把控制台关了，也没发现出什么问题
+4. main 分支里这时还是空的，可以把网站源代码上传上来，方面管理
 
-  ![Alt text](../../static/img/GenerateSite/ForBuild/99.png)
+import Branch2 from '@site/static/img/GenerateSite/ForBuild/Branch2.png';
+
+<CardImg src={Branch2} /> 
+
+
+
+5. 控制台有一个黄条一直显示 99%，不知道是干啥的，我最后把控制台关了，也没发现出什么问题
+
+import ninetyNine from '@site/static/img/GenerateSite/ForBuild/99.png';
+
+<CardImg src={ninetyNine} /> 
 
 
 ### <BH3>6.</BH3> 自定义域名
 
 - 以阿里云购买的域名为例，添加一个记录
 
-  ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D2.png)
+import CustomizeDomain1 from '@site/static/img/GenerateSite/GithubDomain/CustomizeDomain1.png';
 
-  - 主机记录的话，可以随便写。关于域名可以看下这个文章：  
+<CardImg src={CustomizeDomain1} /> 
+
+- 主机记录的话，可以随便写。关于域名可以看下这个文章：  
     *[🔥二级域名的创建、配置和解析，买一个域名，有无限个域名可以使用的方案。][🔥二级域名的创建、配置和解析，买一个域名，有无限个域名可以使用的方案。]*
 
-  ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D3.png)
+import CustomizeDomain2 from '@site/static/img/GenerateSite/GithubDomain/CustomizeDomain2.png';
 
-  - 在 GitHub Pages 的 Custom domain 里填入你的二级域名，点 save
+<CardImg src={CustomizeDomain2} /> 
 
-    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D4.png)
+- 在 GitHub Pages 的 Custom domain 里填入你的二级域名，点 save
 
-    等一会，等网站变成你的二级域名
+import CustomizeDomain3 from '@site/static/img/GenerateSite/GithubDomain/CustomizeDomain3.png';
 
-    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D5.png)
+<CardImg src={CustomizeDomain3} /> 
 
-  - 在站点的 static 目录下，新建一个文本文档，命名为 CNAME ，里面不用写东西，空的就行
 
-    ![Alt text](../../static/img/GenerateSite/GithubDomain/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png)
+等一会，等网站变成你的二级域名
 
+import CustomizeDomain5 from '@site/static/img/GenerateSite/GithubDomain/CustomizeDomain5.png';
+
+<CardImg src={CustomizeDomain5} /> 
+
+- 在站点的 static 目录下，新建一个文本文档，命名为 CNAME ，里面不用写东西，空的就行
+
+import CustomizeDomain4 from '@site/static/img/GenerateSite/GithubDomain/CustomizeDomain4.png';
+
+<CardImg src={CustomizeDomain4} /> 
 
 - 修改 docusaurus.config.js
 

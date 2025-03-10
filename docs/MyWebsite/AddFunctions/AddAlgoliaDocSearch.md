@@ -1,3 +1,9 @@
+---
+date: 2024年07月28日 星期日 15:19:25
+word_count: 908
+reading_time: 5
+---
+
 # 用 Algolia DocSearch 为网站添加搜索功能
 
 ---
@@ -289,7 +295,7 @@
 
 ### 5. 运行爬虫
 
-- 对网站文件夹右键 -> Open Git Bash here ，用 git bash 打开，然后执行下面的命令
+- 首先确定 Docker Desktop 正在运行，然后对网站文件夹右键 -> Open Git Bash here ，用 git bash 打开，然后执行下面的命令
 
     ```shell title="git"
     docker run -it --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper

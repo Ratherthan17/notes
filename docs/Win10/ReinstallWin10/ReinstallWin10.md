@@ -1,25 +1,31 @@
-# 用 U盘 重装 Win10 系统（待完善...）
+---
+date: 2023年11月10日 星期五 13:41:35
+word_count: 515
+reading_time: 3
+---
+
+# 用 U盘 重装 Win10 系统
 
 ---
 
-## 参考资料及用到的资源地址
+## <B2>参考资料及用到的资源地址</B2>
 
-### 参考资料
+### <B3>参考资料</B3>
 
 #### 重装系统
 
 - [小白该怎么装系统？全网最全保姆级win10系统安装指南][痞仔伯爵]  
 - [重装系统 | FirPE 启动U盘：纯净无广告的U盘维护系统][重装系统 | FirPE 启动U盘：纯净无广告的U盘维护系统]
 - [【重装系统win10简单教程】用pe来进行win10系统重装，及微pe与firpe两个常用的pe系统的安装方法和使用体验有什么区别][重装系统win10简单教程]
-- [关于联想Y7000的U盘启动的那些事][关于联想Y7000的U盘启动的那些事]
-- [如何在Windows 10和11中找到您的主板品牌和型号][如何在Windows 10和11中找到您的主板品牌和型号]
-- [电脑pin是什么呀「附：电脑pin设置方法图解」][电脑pin是什么呀「附：电脑pin设置方法图解」]
+- [*~~关于联想Y7000的U盘启动的那些事~~（网页已失效）*][关于联想Y7000的U盘启动的那些事]
+- [*~~如何在Windows 10和11中找到您的主板品牌和型号~~（网页已失效）*][如何在Windows 10和11中找到您的主板品牌和型号]
+- [*~~电脑pin是什么呀「附：电脑pin设置方法图解」~~（网页已失效）*][电脑pin是什么呀「附：电脑pin设置方法图解」]
 
 #### 激活 Windows
 
-- [解决Win10电脑右下角的“激活windows转到电脑设置”的水印的方法][激活 Windows]
+- [解决Win10电脑右下角的“激活windows转到电脑设置”的水印的方法——该网站内有好多个安装密钥][激活 Windows]
 
-### 资源地址
+### <B3>资源地址</B3>>
 
 - [MSDN 官网——下载操作系统镜像（老版）] [MSDN（下载操作系统镜像）]；[MSDN（新版）] [MSDN（新版）]  
 - [FirPE 官网] [FirPE]
@@ -27,7 +33,7 @@
 
 ---
 
-## 步骤
+## <B2>步骤</B2>
 
 :::tip提示
  系统镜像推荐下载这个，这个里面有很多版本可以选择 （这是 *[MSDN（新版）] [MSDN（新版）]* 里的）
@@ -35,7 +41,7 @@
  ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/%E6%8E%A8%E8%8D%90%E4%B8%8B%E8%BD%BD%E7%9A%84%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F.png)
 :::
 
-### 1. 制作启动盘
+### <B3>1. 制作启动盘</B3>
 
 :::danger警告
 制作启动盘的过程中会将U盘格式化，所以别忘了**备份数据**
@@ -58,11 +64,12 @@
 
 - 制作完成后，关闭 FirPe ，然后把从 MSDN 下载的系统镜像复制进U盘里，放在U盘的哪里都行
 
-### 2. 进入 PE 系统，安装 Win10
+### <B3>2. 进入 PE 系统，安装 Win10</B3>
 
 #### 设置 USB 启动
 
 - 如果你的电脑本来就是 Win10 的话，那就省事了（ Win11 我没用过不知道行不行）：
+    - （更新，win11也可以——2025-3-7-00：37）
     - 按住 shift 键，点击重启，会打开高级启动选项  
     
     ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/firpe5-%E8%BF%9B%E5%85%A5PE-%E9%87%8D%E5%90%AF.png)
@@ -99,7 +106,9 @@
     - 查看主板品牌和型号的方法
 
     :::note备注
-    看这篇文章：*[如何在Windows 10和11中找到您的主板品牌和型号][如何在Windows 10和11中找到您的主板品牌和型号]*
+    看这篇文章：*[~~如何在Windows 10和11中找到您的主板品牌和型号~~（网页已失效）][如何在Windows 10和11中找到您的主板品牌和型号]*
+
+    建议下载个 [*图吧工具箱*](https://www.tbtool.cn/) ，里面有各种硬件检测、评分、测试工具，十分的好用
     :::
 
     按 Win + R 打开运行，输入 msinfo32 回车，看主板制造商或者系统 SKU
@@ -108,6 +117,9 @@
     ```
     ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C.png)
     ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9D%BF%E5%93%81%E7%89%8C2.png)
+
+    也可以打开图吧工具箱，在硬件信息里有主板品牌。还可以点击主板工具->AIDA64，查看更详细的信息。
+    ![alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/mainBoard.png)
 
     把那串英文用百度一搜，就能知道是啥主板了
 
@@ -143,7 +155,7 @@
     ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/4.png)
     ![Alt text](../../../static/img/Win10/ReinstallWin10/ReinstallWin10/5.png)
 
-#### 安装系统
+#### 安装系统{#安装系统}
 
 - 如果之前下载的是 business 版，这里就有好几个版本可以选择，选择一个，点击下一步
 
@@ -185,9 +197,11 @@
 - 安装完了之后是重启来着吗？我当初怎么没有截图或拍照？  
   留待补充......
 
+    - 补充，安装完了是重启——2025-3-7-00：55
+
 ---
 
-### 安装时设置
+### <B3>安装时设置</B3>
 
 #### 添加键盘布局
 
@@ -224,7 +238,7 @@
 
 ---
 
-### 安装完后设置
+### <B3>安装完后设置</B3>
 
 #### 分区
 
@@ -274,8 +288,20 @@
 
 #### 激活 Windows
 
+##### 新方法
+
+- 下载 *[云萌 Windows 10+ 激活工具](https://cmwtat.cloudmoe.com/cn.html)* ，自动检测系统版本，一键激活
+
+import SystemActivation from '@site/static/img/Win10/ReinstallWin10/ReinstallWin10/SystemActivation.png';
+
+<CardImg src={SystemActivation} isCenter={true}/>
+
+##### 旧方法
+
 :::note备注
 看这篇文章：*[解决Win10电脑右下角的“激活windows转到电脑设置”的水印的方法][激活 Windows]*
+
+用此方法激活，只能用半年时间，过期后需要重新激活。
 :::
 
 1. 右键开始 -> Windows PowerShell（管理员）(A) 

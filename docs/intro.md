@@ -1,6 +1,11 @@
 ---
+date: 2023年10月07日 星期六 20:37:23
+word_count: 353
+reading_time: 2
 sidebar_position: 1
 ---
+
+
 
 # 一些链接
 
@@ -51,7 +56,8 @@ sidebar_position: 1
 
 ## <B2>办公</B2>
 
-- [WPS Office 2016 极限精简绿色版] [WPS纯净绿色版]
+- [WPS 教育考试版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+
 - [Acrobat DC 破解版][永久免费试用Acrobat DC]
     - [Adobe Acrobat Pro 2022(x64)安装教程分享(b站首发)——这个好用][Adobe Acrobat Pro 2022(x64)安装教程分享(b站首发)]
 
@@ -60,12 +66,9 @@ sidebar_position: 1
 
 - [在线图片编辑器][在线图片编辑器]
 
-- [Chatgpt 官网][Chatgpt]
-    - 国内AI
-        - [文心一言][文心一言]
-        - [提示词之家——每天签一回到，可以用一次GPT4][提示词之家]
-        - [ChatGPT Chinese——可以免费使用 gpt-3.5-turbo][ChatGPT Chinese——可以免费使用 gpt-3.5-turbo]
+- [DeepSeek | 深度求索](https://www.deepseek.com/)
 
+- [~~~WPS Office 2016 极限精简绿色版~~~（已失效）] [WPS纯净绿色版]
 
 ---
 
@@ -84,7 +87,8 @@ sidebar_position: 1
 
 - [7-Zip——好用的压缩软件] [7-Zip]
 - [Clash for Windows] [ClashforWindows]，[Clash for Windows 汉化整合版——科学上网软件] [ClashforWindows汉化整合版]
-- [Snipaste——好用的截屏软件，截的图可以悬浮在屏幕最上面] [snipaste]
+- [PixPin——比 Snipaste 还好用的截屏软件](https://pixpin.cn/)
+  - [Snipaste——好用的截屏软件，截的图可以悬浮在屏幕最上面] [snipaste]
 
 ### <B3/>娱乐
 
@@ -92,6 +96,7 @@ sidebar_position: 1
 
 ### <B3/>学习
 
+- [SaDuck——考公资料大全](https://saduck.top/)
 - [Quizlet——最佳的数字化单词卡和学习工具][Quizlet]
 - [MyGraphPaper 图形方格纸产生器——可以自定义纸张模板，比如语文本、英语本、田格、信纸、五线谱等][MyGraphPaper 图形方格纸产生器]
 

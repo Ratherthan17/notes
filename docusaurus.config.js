@@ -49,7 +49,8 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           //breadcrumbs: false,                    
-
+          
+          showLastUpdateTime:true,
         },
 
         blog:false,//禁用blog插件
@@ -72,10 +73,12 @@ const config = {
     ({
       algolia:{
         // Algolia 提供的应用 ID
-        appId: 'TDHAFYTVF1',
+        //appId: 'TDHAFYTVF1',
+        appId: 'Z7OLUJP2HB',
 
         //  公开 API 密钥：提交它没有危险
-        apiKey: '05ba287471865c446bb1019bcff3fa5a',
+        //apiKey: '05ba287471865c446bb1019bcff3fa5a',
+        apiKey: 'c9531c979d75d3987639e43f54257f05',
 
         indexName: 'ForVercel',//ForGithubPages | ForVercel 
 

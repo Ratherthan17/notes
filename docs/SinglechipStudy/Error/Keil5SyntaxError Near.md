@@ -1,3 +1,9 @@
+---
+date: 2024年05月01日 星期三 17:08:19
+word_count: 177
+reading_time: 1
+---
+
 # 代码没写错，编译后显示 syntax error near
 
 ---

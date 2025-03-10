@@ -1,6 +1,6 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
-import {Highlight,PhotoZoom,MyColor,PhotoBox,W,B3,BH3,B2,B2W,CardBox} from  '@site/src/components/ForMDX/forMDX';
+import {Highlight,PhotoZoom,MyColor,PhotoBox,W,B3,BH3,B2,B3W,CardImg} from  '@site/src/components/ForMDX/forMDX';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -15,9 +15,9 @@ export default{
     W,
     B3,
     B2,
-    B2W,
+    B3W,
     BH3,
     Tabs,
     TabItem,
-    CardBox,
+    CardImg,
 };

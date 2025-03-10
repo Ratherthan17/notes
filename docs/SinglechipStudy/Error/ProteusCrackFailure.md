@@ -1,3 +1,9 @@
+---
+date: 2024年05月01日 星期三 20:33:38
+word_count: 35
+reading_time: 1
+---
+
 # Proteus 因修改安装位置导致破解失败
 
 ---

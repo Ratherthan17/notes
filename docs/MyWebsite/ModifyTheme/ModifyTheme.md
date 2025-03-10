@@ -1,3 +1,9 @@
+---
+date: 2024年08月13日 星期二 01:05:15
+word_count: 463
+reading_time: 3
+---
+
 # 修改 Docusaurus 主题样式
 
 ---
@@ -147,7 +153,35 @@
 </TabItem>
 <TabItem value="img" label="效果">
 
-![alt text](@site/static/img/GenerateSite/ModifyTheme/alert_2024-08-12_21-56-30.png)
+:::tip 提示
+
+打开 <W>src</W> -> <W>css</W> 下的 <W>custom.css</W> ，可以通过 <W>.alert</W> 类来修改 告示 样式。
+
+:::
+
+:::note 备注
+
+打开 <W>src</W> -> <W>css</W> 下的 <W>custom.css</W> ，可以通过 <W>.alert</W> 类来修改 告示 样式。
+
+:::
+
+:::info 信息
+
+打开 <W>src</W> -> <W>css</W> 下的 <W>custom.css</W> ，可以通过 <W>.alert</W> 类来修改 告示 样式。
+
+:::
+
+:::caution 警告
+
+打开 <W>src</W> -> <W>css</W> 下的 <W>custom.css</W> ，可以通过 <W>.alert</W> 类来修改 告示 样式。
+
+:::
+
+:::danger 危险
+
+打开 <W>src</W> -> <W>css</W> 下的 <W>custom.css</W> ，可以通过 <W>.alert</W> 类来修改 告示 样式。
+
+:::
 
 </TabItem>
 </Tabs>

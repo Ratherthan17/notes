@@ -1,3 +1,9 @@
+---
+date: 2024年07月26日 星期五 23:51:31
+word_count: 77
+reading_time: 1
+---
+
 # npm报错：request to [https://registry.npm.taobao.org] failed, reason： certificate has expired
 
 ---

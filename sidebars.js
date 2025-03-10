@@ -51,7 +51,7 @@ const sidebars = {
 
 
     /*----------------单片机学习-------------------*/
-    {
+    /* {
       type: 'category',
       label: '单片机学习',
       items:
@@ -66,7 +66,7 @@ const sidebars = {
               ]
           }
         ]
-    },
+    }, */
 
 
     /*----------------软件-----------------*/
@@ -94,7 +94,7 @@ const sidebars = {
     /*----------------Win10----------------*/
     {
       type: 'category',
-      label: 'Win10',
+      label: 'Windows系统',
       items:
         [
           /*--------------延长暂停更新天数------------------*/
@@ -116,6 +116,7 @@ const sidebars = {
             items:
               [
                 'Win10/ReinstallWin10/ReinstallWin10',
+                'Win10/ReinstallWin10/ReinstallWin11',
                 'Win10/ReinstallWin10/MigrateUsers',
               ],
 

@@ -3,6 +3,11 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import BStyles from '@site/src/css/MyCss.module.css';
 
+import Lazyimg from 'react-lazyimg-component';// 懒加载插件
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+
 export const MyColor = 
 {
   docusaurusGreen:'#25c2a0',
@@ -164,7 +169,7 @@ export function PhotoZoom(props){
 /**************************************************************************************
  * 功能：把图片框起来
  * 参数：src：图片地址，alt：图片描述，title：图片标题，isCenter：是否居中显示,不写默认为否；
- *       isZoom：是否给图片设置点击放大，不写默认为否；
+ *       isZoom：是否给图片设置点击放大，不写默认为是；
  **************************************************************************************/
 export function PhotoBox(props){
   if (props.isMultiple) {
@@ -180,24 +185,41 @@ export function PhotoBox(props){
     return (
         <div class="card-demo" style={{margin: '10px',padding: '10px',borderRadius: '10px',boxShadow: '0 0 10px rgba(0,0,0,0.1)' , }} className={BStyles.PohtoBoxBorder}>
             <div class="card-body">
-                <CardBox src={props.src} alt={props.alt} title={props.title} isZoom={props.isZoom} isCenter={props.isCenter}></CardBox>     
+                <CardImg src={props.src} alt={props.alt} title={props.title} isZoom={props.isZoom} isCenter={props.isCenter}></CardImg>     
             </div>
       </div>     
       )    
   }        
 }
 
-export function CardBox(props){
+/**************************************************************************************
+ * 功能：图片四角稍微有些倒角
+ * 参数：src：图片地址，alt：图片描述，title：图片标题，isCenter：是否居中显示,不写默认为否；
+ *       isZoom：是否给图片设置点击放大，不写默认为是；
+ **************************************************************************************/
+export function CardImg(props){
     return (
-      <div class="card" >
-            {props.isZoom?                          
+      <BrowserOnly>
+      {() => {
+        // 这里可以安全使用 document、window 等浏览器 API
+        const element = document.getElementById('my-id');
+        return (
+      <p><div class="card" style={{borderRadius: '8px',boxShadow: '0 0 20px rgba(0,0,0,0.1)' , }} >
+        {/* <div class="item shadow--md"> */}
+            {props.isZoom?                   
+              <Lazyimg className="lazy" src={props.src}  style={{objectFit: 'cover'}} alt={props.alt} title={props.title} />:
+              //<img src={props.src}  style={{objectFit: 'cover'}} alt={props.alt} title={props.title}  />:
               <PhotoProvider  maskOpacity={0.5} speed={() => 600} >
                   <PhotoView src={props.src} alt={props.alt} title={props.title}>
-                    {props.isCenter? <center><img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  /></center>:<img src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  />}
+                    {props.isCenter? <center><Lazyimg className="lazy"  width="50%" height="50%" src={props.src} style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  /></center>:<Lazyimg className="lazy" src={props.src}  style={{cursor: "zoom-in",objectFit: 'cover'}} alt={props.alt} title={props.title}  />}
                   </PhotoView >
-              </PhotoProvider> : <img src={props.src}  style={{objectFit: 'cover'}} alt={props.alt} title={props.title}  />
+              </PhotoProvider>
             }
-           </div>
+          {/* </div> */}
+      </div></p>
+        )
+         }}
+      </BrowserOnly>
     )
 }
 
